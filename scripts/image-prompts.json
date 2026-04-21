@@ -1,0 +1,55 @@
+{
+  "_notes": "Prompts for generating Happy Class website imagery via KIE AI (Nano Banana Pro). Each entry keyed by output filename (without extension). To regenerate one image only: node scripts/generate-images.mjs hero",
+  "_style_bible": "Vibrant pastel palette - saturated blush pink (#E8B4B8, #F5A8B2), sky blue (#B8D4E3, #A0C8E0), soft butter (#F6D77A), sage (#C9D9B6). Joyful, playful, warm - never spa or therapy. Think Matisse-meets-editorial, gelato colors, candid warmth. Natural soft light, no harsh shadows. No visible text anywhere - text is always blurred, abstracted, or out of frame.",
+  "hero": {
+    "aspect_ratio": "16:9",
+    "resolution": "2K",
+    "prompt": "Editorial lifestyle photography, overhead three-quarter view of a warm sunlit dining table. A blush-pink paper card sits to the left, a sky-blue paper card to the right, both with a soft handwritten feel but no legible text. Two ceramic mugs of coffee, a natural wood pencil mid-use, a cream linen cloth bunched casually. Golden morning light through a window creates soft warm highlights. Background is a cream-colored wood table. Vibrant pastel palette - saturated blush pink, sky blue, butter yellow accents. Joyful, intimate, candid, not staged. High-end magazine editorial feel. Shallow depth of field. No people in frame. No visible text on the papers."
+  },
+  "product-kit": {
+    "aspect_ratio": "4:3",
+    "resolution": "2K",
+    "prompt": "Editorial product photography of a beautifully designed relationship check-in kit. A cream linen-wrapped box sits open, revealing contents fanned out: a stack of blush-pink paper cards on the left, a stack of sky-blue paper cards on the right, a natural wood pencil, and a single thin silk ribbon in dusty rose. The box lid leans behind, showing a subtle rose-gold foil embossed circular logo (abstract, no readable text). Soft studio lighting from the upper left, gentle shadows, overhead three-quarter angle. Background is pale cream linen fabric with subtle texture. Vibrant pastel color story - saturated blush pink and sky blue as heroes, cream and dusty rose supporting. Luxurious, giftable, warm. No visible text on cards."
+  },
+  "vignette-couch": {
+    "aspect_ratio": "1:1",
+    "resolution": "1K",
+    "prompt": "Loose painterly watercolor illustration, hand-painted feel. A mixed-race couple sits on a cream-upholstered couch in a warm living room, laughing softly, leaning toward each other. One partner has warm brown skin and dark curly hair; the other partner has lighter olive skin and wavy brown hair. One holds a blush-pink paper card, the other a sky-blue card. Loose brushstrokes, visible paper texture, gentle pencil outlines. Color palette: saturated blush pink, sky blue, butter yellow, sage green accents, cream background. Joyful, intimate - faces softly abstracted but racial features are clearly rendered. Style inspired by modern editorial illustration, Mary Cassatt meets New Yorker cover art. No visible text."
+  },
+  "vignette-coffee": {
+    "aspect_ratio": "1:1",
+    "resolution": "1K",
+    "prompt": "Loose painterly watercolor illustration, hand-painted feel. An East Asian couple sits across from each other at a small cafe table by a sun-drenched window, reading the cards in their hands (one pink, one blue). Both partners have warm medium skin tones and straight dark hair. Two coffee mugs on the table, a small potted plant. Warm golden morning light streams in. Loose brushstrokes, visible paper texture, gentle pencil outlines. Saturated pastel palette - blush pink, sky blue, butter yellow, warm terracotta accents, cream background. Faces softly abstracted but East Asian features are clearly rendered. Style: modern editorial illustration, painterly, joyful. No visible text."
+  },
+  "vignette-walk": {
+    "aspect_ratio": "1:1",
+    "resolution": "1K",
+    "prompt": "Loose painterly watercolor illustration, hand-painted feel. A Black couple walks side by side along a tree-lined path, talking easily, in no rush. Both partners have rich dark brown skin; one has short natural textured hair, the other has braided hair. Dappled warm afternoon light filters through green-gold leaves overhead. Loose brushstrokes, visible paper texture, gentle pencil outlines. Color palette: saturated blush pink for one figure's top, sky blue for the other's, butter yellow dappled light, sage green foliage, cream path. Faces softly abstracted but racial features are clearly and respectfully rendered. Style: modern editorial illustration, joyful, hopeful. No visible text."
+  },
+  "paper-pink": {
+    "aspect_ratio": "3:4",
+    "resolution": "1K",
+    "prompt": "Overhead macro photograph of a single blush-pink paper card resting on cream linen fabric. The card has a slight natural rumple at one corner. A small handwritten-feeling ink mark in the top-left corner (abstract squiggle, no letters, no readable text). A thin natural-wood pencil casts a soft diagonal shadow across the lower edge. Warm daylight from the upper left, gentle soft shadows. Vibrant saturated blush-pink card color, cream linen background with visible fabric weave texture. Tactile, intimate, beautifully imperfect. No readable text or letterforms anywhere."
+  },
+  "paper-blue": {
+    "aspect_ratio": "3:4",
+    "resolution": "1K",
+    "prompt": "Overhead macro photograph of a single sky-blue paper card resting on cream linen fabric. The card has a slight natural rumple at one corner. A small handwritten-feeling ink mark in the top-left corner (abstract squiggle, no letters, no readable text). A thin natural-wood pencil casts a soft diagonal shadow across the lower edge. Warm daylight from the upper left, gentle soft shadows. Vibrant saturated sky-blue card color, cream linen background with visible fabric weave texture. Tactile, intimate, beautifully imperfect. No readable text or letterforms anywhere."
+  },
+  "paper-both": {
+    "aspect_ratio": "3:4",
+    "resolution": "1K",
+    "prompt": "Overhead macro photograph of two paper cards overlapping casually on cream linen fabric - a blush-pink card underneath, a sky-blue card angled on top. Both show slight natural rumples and small handwritten-feeling abstract ink squiggles in corners (no letters, no readable text). A natural-wood pencil rests diagonally beside them. Warm daylight from the upper left, gentle soft shadows, saturated pastel colors. Cream linen background with visible fabric weave texture. Intimate, warm, joyful. No readable text or letterforms anywhere."
+  },
+  "social-proof": {
+    "aspect_ratio": "16:9",
+    "resolution": "1K",
+    "prompt": "Editorial lifestyle photography, candid masculine-leaning scene. A man's hand (dark denim sleeve, simple watch) rests on a warm wooden table, holding a sky-blue paper card with the index finger and thumb. A chunky cream ceramic mug of black coffee sits beside it. A natural-wood pencil rests on the table. Warm window light from the left, soft shadows, shallow depth of field. Background is softly blurred warm-toned interior. Vibrant saturated pastel palette - sky blue as hero, cream, warm wood tones, touches of blush in the background. Grounded, approachable, not sentimental. No face in frame. No visible text on the card."
+  },
+  "sandra-portrait": {
+    "aspect_ratio": "1:1",
+    "resolution": "1K",
+    "image_input_local": ["scripts/reference-images/sandra-source.png"],
+    "prompt": "Transform the reference photo of the woman into a loose painterly watercolor portrait illustration, matching the same hand-painted style as modern editorial illustrations (Mary Cassatt meets New Yorker cover art). Loose brushstrokes, visible paper texture, gentle pencil outlines. Keep her identifying features clearly recognizable: a confident woman in her early fifties with long dark-brown hair with warm auburn highlights falling past her shoulders, warm genuine smile, rectangular tortoise-shell reading glasses, gold chain necklace with small pendant, sleeveless floral-pattern top. Replace the stacked firewood background with a warm softly-abstracted interior: cream walls, soft warm side light, a hint of a potted plant and a blush-pink paper card visible in the corner. Color palette: saturated blush pink, sky blue, butter yellow dappled light, sage green, warm cream background. Joyful, confident, approachable. Face rendered in watercolor style but clearly recognizable as the specific woman in the reference. No visible text."
+  }
+}

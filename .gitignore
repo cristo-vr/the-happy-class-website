@@ -4,6 +4,7 @@ node_modules/
 .env
 .env.*
 !.env.example
+.dev.vars
 .DS_Store
 Thumbs.db
 .vscode/

@@ -23,11 +23,11 @@ const jsonLd = {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Happy Class — Making Something Good Even Better</title>
-  <meta name="description" content="The Happy Class for Couples — a DIY alternative to couples counseling. A physical kit couples do together. Not therapy. Not fixing. Just making something good even better." />
+  <title>The Happy Class - Making Something Good Even Better</title>
+  <meta name="description" content="The Happy Class for Couples - a DIY alternative to couples counseling. A physical kit couples do together. Not therapy. Not fixing. Just making something good even better." />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="The Happy Class — Making Something Good Even Better" />
+  <meta property="og:title" content="The Happy Class - Making Something Good Even Better" />
   <meta property="og:description" content="A DIY alternative to couples counseling. A physical kit couples do together. Coming October 2026." />
   <meta property="og:url" content="https://thehappyclass.com" />
   <meta property="og:site_name" content="The Happy Class" />
@@ -35,7 +35,7 @@ const jsonLd = {
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
@@ -46,47 +46,60 @@ const jsonLd = {
   <!-- ═══ HERO ═══ -->
   <section class="hero">
     <div class="hero__bg" aria-hidden="true">
-      <div class="hero__circle hero__circle--1"></div>
-      <div class="hero__circle hero__circle--2"></div>
-      <div class="hero__circle hero__circle--3"></div>
-      <div class="hero__circle hero__circle--4"></div>
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+      <div class="hero__blob hero__blob--3"></div>
+      <span class="confetti confetti--blush"  style="width:14px;height:14px;top:18%;left:12%;"></span>
+      <span class="confetti confetti--sky"    style="width:10px;height:10px;top:32%;right:18%;"></span>
+      <span class="confetti confetti--butter" style="width:18px;height:18px;top:72%;left:22%;"></span>
+      <span class="confetti confetti--coral"  style="width:8px;height:8px;top:65%;right:28%;"></span>
+      <span class="confetti confetti--sage"   style="width:12px;height:12px;top:22%;left:46%;"></span>
     </div>
-    <div class="container hero__content">
-      <p class="hero__label">The Happy Class for Couples</p>
-      <h1>Making something good<br /><span class="hero__accent">even better.</span></h1>
-      <p class="hero__sub">A DIY alternative to couples counseling. Not because something's broken — because you want to keep it great.</p>
-      <a href="#waitlist" class="btn btn--rose btn--large">Join the Waitlist</a>
-      <p class="hero__launch">Launching October 2026</p>
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="hero__label">The Happy Class <span aria-hidden="true">·</span> for Couples</p>
+        <h1>Making something <span class="script script--rose">good</span><br />even <span class="hero__underline">better<svg viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2,9 C40,2 90,12 130,6 C160,2 180,8 198,5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>.</h1>
+        <p class="hero__sub">A DIY alternative to couples counseling. Not because something's broken - because you want to keep it great.</p>
+        <div class="hero__cta-row">
+          <a href="#waitlist" class="btn btn--primary btn--large">Join the Waitlist</a>
+          <p class="hero__launch">Launching <strong>October 2026</strong></p>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <img src="/images/hero.png" alt="A warm sunlit table with pink and blue cards, coffee mugs, and a pencil." />
+        <span class="confetti confetti--blush"  style="width:24px;height:24px;top:-12px;left:8%;"></span>
+        <span class="confetti confetti--butter" style="width:16px;height:16px;bottom:6%;right:-10px;"></span>
+        <span class="confetti confetti--sky"    style="width:20px;height:20px;bottom:-8px;left:24%;"></span>
+      </div>
     </div>
   </section>
 
   <!-- ═══ THE PROBLEM ═══ -->
-  <section class="section" id="what">
+  <section class="section bg-cream" id="what">
     <div class="container text-center">
       <p class="overline">Here's the thing</p>
-      <h2>Most couples don't need therapy.<br />They need <em>better structure.</em></h2>
+      <h2>Most couples don't need therapy.<br />They need <span class="script script--sky">better structure.</span></h2>
       <p class="mx-auto lead">You're not in crisis. You're not falling apart. You love each other. But somewhere along the way, the conversations got shorter, the check-ins stopped, and "we're fine" became the answer to everything. You're good. But you know you could be better.</p>
     </div>
   </section>
 
   <!-- ═══ WHAT IT IS ═══ -->
   <section class="section bg-linen">
+    <span class="confetti confetti--butter" style="width:14px;height:14px;top:10%;left:6%;"></span>
+    <span class="confetti confetti--sky"    style="width:10px;height:10px;bottom:14%;right:10%;"></span>
     <div class="container">
       <div class="split">
         <div class="split__content">
           <p class="overline">What is The Happy Class?</p>
-          <h2>A kit you do together.</h2>
-          <p>The Happy Class is a physical product — a beautifully designed box that gives you and your partner the structure to have the conversations you've been putting off. Not heavy therapy conversations. Real ones. Honest ones. The kind that remind you why you chose each other.</p>
+          <h2>A kit you <span class="script script--sky">do together.</span></h2>
+          <p>The Happy Class is a physical product - a beautifully designed box that gives you and your partner the structure to have the conversations you've been putting off. Not heavy therapy conversations. Real ones. Honest ones. The kind that remind you why you chose each other.</p>
           <p>It's guided. It's structured. It's actually fun. And when you're done, you know each other better than you did when you started.</p>
         </div>
         <div class="split__visual">
-          <div class="product-preview">
-            <div class="paper paper--pink">
-              <span class="paper__label">About your partner</span>
-            </div>
-            <div class="paper paper--blue">
-              <span class="paper__label">About you</span>
-            </div>
+          <div class="product-frame">
+            <img src="/images/product-kit.png" alt="The Happy Class kit - a linen box with pink and blue paper cards, a pencil, and a ribbon." />
+            <span class="confetti confetti--coral"  style="width:18px;height:18px;top:-14px;right:-10px;"></span>
+            <span class="confetti confetti--sage"   style="width:12px;height:12px;bottom:10%;left:-14px;"></span>
           </div>
         </div>
       </div>
@@ -94,100 +107,126 @@ const jsonLd = {
   </section>
 
   <!-- ═══ WHO IT'S FOR ═══ -->
-  <section class="section">
+  <section class="section bg-cream">
     <div class="container text-center">
       <p class="overline">Who it's for</p>
-      <h2>Couples who are good —<br />and want to be <em>great.</em></h2>
+      <h2>Couples who are good -<br />and want to be <span class="script script--butter">great.</span></h2>
 
       <div class="cards">
         <div class="card">
-          <div class="card__icon card__icon--rose">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <div class="card__media">
+            <img src="/images/vignette-couch.png" alt="Couple on a couch, laughing, holding pink and blue cards." />
           </div>
           <h3>You're solid</h3>
-          <p>You're not in trouble. You're not looking for a lifeline. You just know that good relationships don't maintain themselves — they need attention.</p>
+          <p>You're not in trouble. You're not looking for a lifeline. You just know that good relationships don't maintain themselves - they need attention.</p>
         </div>
         <div class="card">
-          <div class="card__icon card__icon--sky">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <div class="card__media">
+            <img src="/images/vignette-coffee.png" alt="Couple at a cafe table, reading their cards in warm morning light." />
           </div>
           <h3>You want to talk</h3>
-          <p>Not about logistics. Not about the kids' schedule. You want the real stuff — the stuff that gets buried under busy. You just need a way in.</p>
+          <p>Not about logistics. Not about the kids' schedule. You want the real stuff - the stuff that gets buried under busy. You just need a way in.</p>
         </div>
         <div class="card">
-          <div class="card__icon card__icon--sage">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          <div class="card__media">
+            <img src="/images/vignette-walk.png" alt="Couple walking together on a tree-lined path." />
           </div>
           <h3>Therapy feels like too much</h3>
-          <p>You don't need a therapist. You don't need a crisis. You just need a framework that makes it easy to check in with each other — on your own terms, in your own home.</p>
+          <p>You don't need a therapist. You don't need a crisis. You just need a framework that makes it easy to check in with each other - on your own terms, in your own home.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ═══ HOW IT WORKS ═══ -->
-  <section class="section bg-espresso">
+  <section class="section bg-gradient-sunrise">
+    <span class="confetti confetti--blush"  style="width:18px;height:18px;top:12%;right:8%;"></span>
+    <span class="confetti confetti--sky"    style="width:14px;height:14px;bottom:10%;left:6%;"></span>
     <div class="container">
       <div class="text-center" style="margin-bottom: var(--space-lg);">
-        <p class="overline overline--light">How it works</p>
-        <h2 style="color: var(--linen);">Simple. Intentional. Yours.</h2>
+        <p class="overline">How it works</p>
+        <h2>Simple. Intentional. <span class="script script--sky">Yours.</span></h2>
       </div>
 
       <div class="steps">
         <div class="step">
           <span class="step__number">01</span>
-          <div class="step__paper step__paper--pink"></div>
-          <h3>Pick up the pink paper.</h3>
+          <div class="step__media">
+            <img src="/images/paper-pink.png" alt="A blush-pink paper card on cream linen." />
+          </div>
+          <h3>Pick up the <span class="script script--rose">pink</span> paper.</h3>
           <p>Write about your partner. What you see. What you appreciate. What you wish they knew.</p>
         </div>
         <div class="step">
           <span class="step__number">02</span>
-          <div class="step__paper step__paper--blue"></div>
-          <h3>Pick up the blue paper.</h3>
+          <div class="step__media">
+            <img src="/images/paper-blue.png" alt="A sky-blue paper card on cream linen." />
+          </div>
+          <h3>Pick up the <span class="script script--sky">blue</span> paper.</h3>
           <p>Write about yourself. What you need. What you're carrying. What you haven't said out loud yet.</p>
         </div>
         <div class="step">
           <span class="step__number">03</span>
-          <div class="step__paper step__paper--both"></div>
-          <h3>Come together.</h3>
-          <p>Share what you wrote. Follow the guided prompts. Have the conversation. It's not about being perfect — it's about being present.</p>
+          <div class="step__media">
+            <img src="/images/paper-both.png" alt="Pink and blue paper cards overlapping on linen." />
+          </div>
+          <h3>Come <span class="script script--butter">together.</span></h3>
+          <p>Share what you wrote. Follow the guided prompts. Have the conversation. It's not about being perfect - it's about being present.</p>
         </div>
       </div>
 
       <div class="text-center" style="margin-top: var(--space-lg);">
-        <p style="color: rgba(250,246,240,0.5); font-size: 0.9375rem;">Think of it as an annual relationship check-in. Like a physical for your partnership.</p>
+        <p class="tiny-note">Think of it as an annual relationship check-in. Like a physical for your partnership.</p>
       </div>
     </div>
   </section>
 
   <!-- ═══ THE VISION ═══ -->
-  <section class="section">
+  <section class="section bg-cream">
     <div class="container container--narrow text-center">
+      <div class="sandra-portrait">
+        <img src="/images/sandra-portrait.png" alt="Watercolor portrait of Sandra Weise." />
+        <span class="confetti confetti--blush"  style="width:18px;height:18px;top:-4px;right:-10px;"></span>
+        <span class="confetti confetti--sky"    style="width:14px;height:14px;bottom:4px;left:-14px;"></span>
+        <span class="confetti confetti--butter" style="width:12px;height:12px;top:30%;right:-18px;"></span>
+      </div>
       <p class="overline">The story behind it</p>
-      <h2>Twenty years of sitting across<br />from people in the moments<br />that matter most.</h2>
-      <p class="mx-auto" style="margin-top: 1.5rem;">I'm Sandra Weise. I've been a life coach for over two decades. I've sat with thousands of people — couples, families, individuals — at the exact moment they realize something needs to change.</p>
+      <h2>Twenty years of sitting across from people in the moments that <span class="script script--sky">matter most.</span></h2>
+      <p class="mx-auto" style="margin-top: 1.5rem;">I'm Sandra Weise. I've been a life coach for over two decades. I've sat with thousands of people - couples, families, individuals - at the exact moment they realize something needs to change.</p>
       <p class="mx-auto">Here's what I've learned: most couples who walk into a coaching session aren't broken. They're just out of practice. They stopped checking in. They stopped asking each other the real questions. And over time, "fine" replaced "great."</p>
-      <p class="mx-auto">The Happy Class is everything I've learned about what makes relationships work — distilled into something you can do at home, together, without a coach in the room. Because you don't need me. You need each other. And a better structure.</p>
+      <p class="mx-auto">The Happy Class is everything I've learned about what makes relationships work - distilled into something you can do at home, together, without a coach in the room. Because you don't need me. You need each other. And a better structure.</p>
       <p class="mx-auto" style="margin-top: 1.5rem;"><a href="https://sandraweise.com" class="text-link">More about Sandra &rarr;</a></p>
     </div>
   </section>
 
   <!-- ═══ SOCIAL PROOF ═══ -->
-  <section class="section bg-linen">
-    <div class="container text-center">
-      <p class="overline">Validated</p>
-      <h2>We tested it. Men loved it.</h2>
-      <p class="mx-auto lead">We put The Happy Class in front of men — the audience most likely to resist anything that sounds like therapy. The response blew us away. They loved the name. They loved the concept. They didn't feel like they were being asked to "fix" something. They felt invited to do something good for their relationship.</p>
-
-      <p class="mx-auto" style="margin-top: 2rem; font-style: italic; color: var(--text-muted);">"It doesn't feel like therapy. It feels like something I'd actually want to do with my partner."</p>
+  <section class="section bg-sky-soft">
+    <div class="container">
+      <div class="split split--reverse">
+        <div class="split__visual">
+          <div class="product-frame">
+            <img src="/images/social-proof.png" alt="A man's hand holding a blue paper card on a warm wooden table." />
+            <span class="confetti confetti--blush" style="width:16px;height:16px;top:-10px;left:-12px;"></span>
+            <span class="confetti confetti--butter" style="width:12px;height:12px;bottom:8%;right:-10px;"></span>
+          </div>
+        </div>
+        <div class="split__content">
+          <p class="overline">Validated</p>
+          <h2>We tested it. <span class="script script--rose">Men loved it.</span></h2>
+          <p>We put The Happy Class in front of men - the audience most likely to resist anything that sounds like therapy. The response blew us away. They loved the name. They loved the concept. They didn't feel like they were being asked to "fix" something. They felt invited to do something good for their relationship.</p>
+          <blockquote class="pull-quote">
+            "It doesn't feel like therapy. It feels like something I'd actually want to do with my partner."
+          </blockquote>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ═══ THE ROADMAP ═══ -->
-  <section class="section">
+  <section class="section bg-cream">
     <div class="container text-center">
       <p class="overline">What's coming</p>
-      <h2>Couples first.<br />Then <em>everyone.</em></h2>
+      <h2>Couples first.<br />Then <span class="script script--butter">everyone.</span></h2>
       <p class="mx-auto" style="margin-bottom: var(--space-lg);">The Happy Class for Couples is just the beginning. The same framework works for every relationship that matters.</p>
 
       <div class="roadmap">
@@ -222,16 +261,19 @@ const jsonLd = {
 
   <!-- ═══ WAITLIST ═══ -->
   <section class="section bg-espresso" id="waitlist">
+    <span class="confetti confetti--blush"  style="width:16px;height:16px;top:18%;left:12%;opacity:0.35;"></span>
+    <span class="confetti confetti--sky"    style="width:14px;height:14px;top:70%;right:14%;opacity:0.35;"></span>
+    <span class="confetti confetti--butter" style="width:12px;height:12px;top:28%;right:22%;opacity:0.3;"></span>
     <div class="container container--narrow text-center">
-      <h2 style="color: var(--linen);">Be the first to know.</h2>
-      <p style="color: rgba(250,246,240,0.6); margin: 1rem auto 2.5rem; max-width: 480px;">The Happy Class for Couples launches October 2026. Drop your email and we'll let you know the moment it's ready.</p>
+      <h2 style="color: var(--linen);">Be the <span class="script script--butter">first</span> to know.</h2>
+      <p style="color: rgba(250,246,240,0.7); margin: 1rem auto 2.5rem; max-width: 480px;">The Happy Class for Couples launches October 2026. Drop your email and we'll let you know the moment it's ready.</p>
 
       <form id="waitlist-form" class="waitlist-form">
         <div class="waitlist-form__row">
           <input type="text" name="name" placeholder="First name (optional)" class="waitlist-input" />
           <input type="email" name="email" placeholder="Your email" class="waitlist-input" required />
         </div>
-        <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_SITE_KEY" data-theme="dark"></div>
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAADAiulObYttIgvz0" data-theme="dark"></div>
         <button type="submit" class="btn btn--rose btn--large waitlist-submit" id="waitlist-btn">
           <span class="submit-text">Join the Waitlist</span>
           <span class="submit-loading" style="display:none;">Adding you...</span>
@@ -239,7 +281,7 @@ const jsonLd = {
         <div id="waitlist-status" class="waitlist-status" role="alert"></div>
       </form>
 
-      <p style="color: rgba(250,246,240,0.3); font-size: 0.8125rem; margin-top: 1.5rem;">No spam. Just one email when it's time. That's it.</p>
+      <p style="color: rgba(250,246,240,0.4); font-size: 0.8125rem; margin-top: 1.5rem;">No spam. Just one email when it's time. That's it.</p>
     </div>
   </section>
 
@@ -247,7 +289,7 @@ const jsonLd = {
   <footer class="footer">
     <div class="container text-center">
       <p class="footer__brand">The Happy Class</p>
-      <p class="footer__tagline">Making something good even better.</p>
+      <p class="footer__tagline">Making something good <span class="script script--rose">even better.</span></p>
       <div class="footer__links">
         <a href="https://sandraweise.com" target="_blank" rel="noopener noreferrer">sandraweise.com</a>
         <span class="footer__sep">&middot;</span>
@@ -323,116 +365,175 @@ const jsonLd = {
   /* ═══ HERO ═══ */
   .hero {
     position: relative;
-    min-height: 90vh;
+    min-height: 92vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--espresso);
+    background: linear-gradient(140deg, var(--linen) 0%, var(--blush-soft) 30%, var(--sky-soft) 65%, var(--butter-soft) 100%);
     overflow: hidden;
-    text-align: center;
+    padding: 6rem 0 4rem;
   }
 
   .hero__bg {
     position: absolute;
     inset: 0;
     pointer-events: none;
+    overflow: hidden;
   }
 
-  .hero__circle {
+  .hero__blob {
     position: absolute;
     border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.55;
   }
-  .hero__circle--1 { width: 500px; height: 500px; background: var(--rose); opacity: 0.06; top: -180px; right: -120px; }
-  .hero__circle--2 { width: 350px; height: 350px; background: var(--sky); opacity: 0.05; bottom: -100px; left: -80px; }
-  .hero__circle--3 { width: 200px; height: 200px; background: var(--citrine); opacity: 0.04; top: 30%; left: 10%; }
-  .hero__circle--4 { width: 280px; height: 280px; background: var(--sage); opacity: 0.04; bottom: 10%; right: 15%; }
+  .hero__blob--1 { width: 520px; height: 520px; background: var(--blush); top: -140px; right: -80px; }
+  .hero__blob--2 { width: 420px; height: 420px; background: var(--sky); bottom: -120px; left: -100px; }
+  .hero__blob--3 { width: 300px; height: 300px; background: var(--butter); top: 40%; left: 45%; opacity: 0.4; }
 
-  .hero__content {
+  .hero__grid {
     position: relative;
     z-index: 2;
-    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 3.5rem;
+    align-items: center;
+  }
+
+  .hero__content {
+    text-align: left;
   }
 
   .hero__label {
     font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.3em;
+    font-weight: 700;
+    letter-spacing: 0.28em;
     text-transform: uppercase;
-    color: var(--rose);
+    color: var(--rose-deep);
     margin-bottom: 1.5rem;
   }
 
   .hero h1 {
-    color: var(--linen);
     margin-bottom: 1.5rem;
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 560px;
   }
 
-  .hero__accent {
-    color: var(--rose);
+  .hero__underline {
+    position: relative;
+    display: inline-block;
+    color: var(--rose-deep);
+  }
+  .hero__underline svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -0.18em;
+    width: 100%;
+    height: 0.5em;
+    color: var(--butter);
   }
 
   .hero__sub {
     font-size: 1.125rem;
-    color: rgba(250, 246, 240, 0.6);
-    max-width: 500px;
-    margin: 0 auto 2.5rem;
+    color: var(--text-dark);
+    max-width: 520px;
+    margin: 0 0 2.25rem;
     line-height: 1.7;
+    opacity: 0.82;
+  }
+
+  .hero__cta-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
   }
 
   .hero__launch {
-    margin-top: 1rem;
-    font-size: 0.8125rem;
-    color: rgba(250, 246, 240, 0.35);
-    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin: 0;
   }
 
-  /* ═══ OVERLINE ═══ */
+  .hero__visual {
+    position: relative;
+  }
+
+  .hero__visual img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    aspect-ratio: 16 / 11;
+    object-fit: cover;
+    transform: rotate(1deg);
+  }
+
+  @media (max-width: 900px) {
+    .hero__grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .hero__content { text-align: center; }
+    .hero h1 { margin-left: auto; margin-right: auto; }
+    .hero__sub { margin-left: auto; margin-right: auto; }
+    .hero__cta-row { justify-content: center; }
+  }
+
+  /* ═══ OVERLINES + LEADS ═══ */
   .overline {
     font-family: 'DM Sans', sans-serif;
     font-size: 0.6875rem;
-    font-weight: 600;
-    letter-spacing: 0.25em;
+    font-weight: 700;
+    letter-spacing: 0.26em;
     text-transform: uppercase;
-    color: var(--rose-deep);
+    color: var(--text-dark);
     margin-bottom: 0.75rem;
+    max-width: none;
+    opacity: 0.75;
   }
 
-  .overline--light {
-    color: var(--rose);
-  }
-
-  /* ═══ LEAD TEXT ═══ */
   .lead {
     font-size: 1.125rem;
     color: var(--text-muted);
     margin-top: 1.25rem;
   }
 
-  em {
-    font-style: italic;
-    color: var(--espresso);
+  .tiny-note {
+    color: var(--text-muted);
+    font-size: 0.9375rem;
+    margin: 0 auto;
+    max-width: 44ch;
+    opacity: 0.85;
   }
 
   /* ═══ BG VARIANTS ═══ */
-  .bg-linen { background: var(--linen); }
-  .bg-espresso { background: var(--espresso); }
+  .bg-cream       { background: var(--cream); }
+  .bg-linen       { background: var(--linen); }
+  .bg-espresso    { background: var(--espresso); }
+  .bg-blush-soft  { background: var(--blush-soft); }
+  .bg-sky-soft    { background: var(--sky-soft); }
+  .bg-gradient-sunrise {
+    background: linear-gradient(145deg, var(--blush-soft) 0%, var(--butter-soft) 55%, var(--sky-soft) 100%);
+  }
 
   /* ═══ SPLIT LAYOUT ═══ */
   .split {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
+    grid-template-columns: 1.1fr 1fr;
     gap: 4rem;
     align-items: center;
   }
+  .split--reverse {
+    grid-template-columns: 1fr 1.1fr;
+  }
+  .split--reverse .split__visual { order: 0; }
+  .split--reverse .split__content { order: 1; }
 
   .split__content p {
-    color: var(--text-muted);
+    color: var(--text-dark);
+    opacity: 0.82;
     margin-bottom: 1.25rem;
     font-size: 1.0625rem;
     line-height: 1.8;
+    max-width: 52ch;
   }
 
   .split__content h2 {
@@ -440,90 +541,64 @@ const jsonLd = {
   }
 
   @media (max-width: 768px) {
-    .split { grid-template-columns: 1fr; gap: 2.5rem; }
+    .split, .split--reverse { grid-template-columns: 1fr; gap: 2.5rem; }
   }
 
-  /* ═══ PRODUCT PREVIEW (pink/blue paper) ═══ */
-  .product-preview {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-  }
-
-  .paper {
-    width: 160px;
-    height: 220px;
-    border-radius: 1rem;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 1.25rem;
+  /* ═══ PRODUCT FRAME (shared image wrapper) ═══ */
+  .product-frame {
     position: relative;
-    box-shadow: 0 8px 32px rgba(44, 29, 18, 0.1);
-    transition: transform 0.3s ease;
+    border-radius: var(--radius-xl);
+    overflow: visible;
   }
-
-  .paper:hover {
-    transform: translateY(-4px) rotate(-1deg);
-  }
-
-  .paper--pink {
-    background: linear-gradient(145deg, #F5E1E3, var(--rose));
-    transform: rotate(-3deg);
-  }
-
-  .paper--blue {
-    background: linear-gradient(145deg, #D4E5F0, var(--sky));
-    transform: rotate(2deg);
-  }
-
-  .paper--pink:hover { transform: translateY(-4px) rotate(-4deg); }
-  .paper--blue:hover { transform: translateY(-4px) rotate(1deg); }
-
-  .paper__label {
-    font-size: 0.8125rem;
-    font-weight: 600;
-    color: rgba(44, 29, 18, 0.5);
+  .product-frame img {
+    width: 100%;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
   }
 
   /* ═══ CARDS ═══ */
   .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1.75rem;
     margin-top: var(--space-lg);
   }
 
   .card {
     background: white;
-    border-radius: 1.5rem;
-    padding: 2.25rem;
+    border-radius: var(--radius-lg);
+    padding: 0;
     text-align: left;
-    box-shadow: 0 2px 12px rgba(44, 29, 18, 0.06);
+    box-shadow: var(--shadow-sm);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
   }
 
   .card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 32px rgba(44, 29, 18, 0.1);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
   }
 
-  .card__icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.25rem;
+  .card__media {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: var(--blush-soft);
   }
-
-  .card__icon--rose { background: rgba(232, 180, 184, 0.2); color: var(--rose-deep); }
-  .card__icon--sky { background: rgba(184, 212, 227, 0.3); color: var(--indigo); }
-  .card__icon--sage { background: rgba(156, 175, 136, 0.15); color: var(--sage); }
+  .card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+  .card:hover .card__media img {
+    transform: scale(1.04);
+  }
 
   .card h3 {
-    margin-bottom: 0.5rem;
+    margin: 1.5rem 1.75rem 0.5rem;
     font-size: 1.25rem;
   }
 
@@ -531,6 +606,8 @@ const jsonLd = {
     color: var(--text-muted);
     font-size: 0.9375rem;
     line-height: 1.7;
+    padding: 0 1.75rem 1.75rem;
+    margin: 0;
   }
 
   @media (max-width: 768px) {
@@ -541,44 +618,51 @@ const jsonLd = {
   .steps {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 2.25rem;
   }
 
   .step {
     text-align: center;
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 1.75rem 1.5rem 2rem;
+    box-shadow: var(--shadow-sm);
+    position: relative;
   }
 
   .step__number {
-    display: block;
-    font-family: 'Lora', serif;
-    font-size: 2.5rem;
+    display: inline-block;
+    font-family: 'Caveat', cursive;
     font-weight: 700;
-    color: rgba(250, 246, 240, 0.12);
-    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--rose-deep);
+    line-height: 1;
+    margin-bottom: 0.5rem;
   }
 
-  .step__paper {
-    width: 60px;
-    height: 80px;
-    border-radius: 0.5rem;
-    margin: 0 auto 1.25rem;
+  .step__media {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    max-width: 180px;
+    margin: 0.75rem auto 1.5rem;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
   }
-
-  .step__paper--pink { background: linear-gradient(145deg, #F5E1E3, var(--rose)); transform: rotate(-2deg); }
-  .step__paper--blue { background: linear-gradient(145deg, #D4E5F0, var(--sky)); transform: rotate(2deg); }
-  .step__paper--both {
-    background: linear-gradient(135deg, var(--rose) 50%, var(--sky) 50%);
-    transform: rotate(0deg);
+  .step__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .step h3 {
-    color: var(--linen);
-    font-size: 1.125rem;
+    color: var(--text-dark);
+    font-size: 1.1875rem;
     margin-bottom: 0.5rem;
   }
 
   .step p {
-    color: rgba(250, 246, 240, 0.55);
+    color: var(--text-muted);
     font-size: 0.9375rem;
     line-height: 1.7;
     max-width: 280px;
@@ -586,34 +670,41 @@ const jsonLd = {
   }
 
   @media (max-width: 768px) {
-    .steps { grid-template-columns: 1fr; gap: 3rem; }
+    .steps { grid-template-columns: 1fr; gap: 1.5rem; }
   }
 
-  /* ═══ PROOF STATS ═══ */
-  .proof-stats {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    margin-top: 2.5rem;
+  /* ═══ SANDRA PORTRAIT ═══ */
+  .sandra-portrait {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    overflow: visible;
+  }
+  .sandra-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: var(--shadow-md);
+    border: 4px solid white;
   }
 
-  .proof-stat {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .proof-stat__number {
+  /* ═══ PULL QUOTE ═══ */
+  .pull-quote {
+    margin: 1.75rem 0 0;
+    padding: 1.5rem 1.75rem;
+    background: white;
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--sky-deep);
     font-family: 'Lora', serif;
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: var(--espresso);
-    line-height: 1;
-  }
-
-  .proof-stat__label {
-    font-size: 0.875rem;
-    color: var(--text-muted);
-    margin-top: 0.375rem;
+    font-style: italic;
+    font-size: 1.125rem;
+    color: var(--text-dark);
+    line-height: 1.55;
+    box-shadow: var(--shadow-sm);
+    max-width: 52ch;
   }
 
   /* ═══ ROADMAP ═══ */
@@ -628,6 +719,16 @@ const jsonLd = {
   .roadmap__item {
     text-align: center;
     min-width: 120px;
+    padding: 1.25rem 1rem;
+    background: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+
+  .roadmap__item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
   }
 
   .roadmap__dot {
@@ -636,13 +737,17 @@ const jsonLd = {
     height: 14px;
     border-radius: 50%;
     background: var(--sand);
-    margin: 0 auto 1rem;
+    margin: 0 auto 0.75rem;
     position: relative;
+  }
+
+  .roadmap__item--active {
+    background: linear-gradient(135deg, var(--blush-soft) 0%, var(--sky-soft) 100%);
   }
 
   .roadmap__item--active .roadmap__dot {
     background: var(--rose-deep);
-    box-shadow: 0 0 0 4px rgba(212, 146, 154, 0.2);
+    box-shadow: 0 0 0 4px rgba(212, 102, 122, 0.22);
   }
 
   .roadmap__item h4 {
@@ -665,10 +770,12 @@ const jsonLd = {
     font-weight: 600;
     color: var(--rose-deep);
     transition: color 0.2s ease;
+    border-bottom: 1.5px solid rgba(212, 102, 122, 0.35);
   }
 
   .text-link:hover {
-    color: var(--espresso);
+    color: var(--sky-deep);
+    border-bottom-color: var(--sky-deep);
   }
 
   /* ═══ WAITLIST FORM ═══ */
@@ -689,43 +796,44 @@ const jsonLd = {
   .waitlist-input {
     flex: 1;
     padding: 0.875rem 1.125rem;
-    border: 1.5px solid rgba(250, 246, 240, 0.12);
-    border-radius: 0.75rem;
+    border: 1.5px solid rgba(250, 246, 240, 0.15);
+    border-radius: var(--radius-md);
     background: rgba(250, 246, 240, 0.06);
     color: var(--linen);
     font-family: 'DM Sans', sans-serif;
     font-size: 0.9375rem;
-    transition: border-color 0.2s ease;
+    transition: border-color 0.2s ease, background 0.2s ease;
   }
 
   .waitlist-input::placeholder {
-    color: rgba(250, 246, 240, 0.3);
+    color: rgba(250, 246, 240, 0.35);
   }
 
   .waitlist-input:focus {
     outline: none;
-    border-color: var(--rose);
+    border-color: var(--blush);
+    background: rgba(250, 246, 240, 0.10);
   }
 
   .waitlist-status {
     font-size: 0.9375rem;
-    border-radius: 0.75rem;
+    border-radius: var(--radius-md);
     padding: 0;
     transition: all 0.3s ease;
   }
 
   .waitlist-status.success {
     padding: 0.875rem 1.25rem;
-    background: rgba(156, 175, 136, 0.12);
+    background: rgba(184, 204, 158, 0.18);
     color: var(--sage);
-    border: 1px solid rgba(156, 175, 136, 0.25);
+    border: 1px solid rgba(184, 204, 158, 0.3);
   }
 
   .waitlist-status.error {
     padding: 0.875rem 1.25rem;
-    background: rgba(164, 52, 58, 0.12);
-    color: var(--rose);
-    border: 1px solid rgba(232, 180, 184, 0.25);
+    background: rgba(245, 168, 178, 0.14);
+    color: var(--blush);
+    border: 1px solid rgba(245, 168, 178, 0.3);
   }
 
   .cf-turnstile {
@@ -746,9 +854,10 @@ const jsonLd = {
 
   .footer__brand {
     font-family: 'Lora', serif;
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     font-weight: 600;
-    color: var(--espresso);
+    color: var(--text-dark);
+    max-width: none;
   }
 
   .footer__tagline {
@@ -756,6 +865,7 @@ const jsonLd = {
     color: var(--text-muted);
     margin-top: 0.25rem;
     margin-bottom: 1.5rem;
+    max-width: none;
   }
 
   .footer__links {

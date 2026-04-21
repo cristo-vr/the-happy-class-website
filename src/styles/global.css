@@ -1,33 +1,38 @@
 /* ============================================
-   The Happy Class — Design System
-   Warm, approachable, non-threatening.
-   Built on Sandra Weise's brand guide v2 palette,
-   shifted toward rose-quartz and warmth.
+   The Happy Class - Design System
+   Joyful. Vibrant pastels. Pop of color.
+   Built on Sandra Weise's brand guide typography,
+   shifted toward saturated pinks + blues for
+   the Happy Class sub-brand.
    ============================================ */
 
 :root {
-  /* ── Core palette ── */
-  --cream: #FAF6F0;
-  --linen: #F3EDE4;
-  --sand: #C8B89A;
+  /* ── Base warm neutrals ── */
+  --cream: #FFF9F3;
+  --linen: #FAF3E8;
+  --sand: #E8D9BE;
   --driftwood: #A68B6B;
   --espresso: #2C1D12;
-  --charcoal: #36454F;
 
-  /* ── Happy Class accent palette ── */
-  --rose: #E8B4B8;
-  --rose-deep: #D4929A;
-  --blush: #F5E1E3;
-  --sky: #B8D4E3;
-  --sage: #9CAF88;
-  --citrine: #D4A843;
-  --indigo: #3D4F8F;
+  /* ── Happy Class vibrant pastels ── */
+  --blush:        #F5A8B2;  /* saturated blush pink */
+  --blush-soft:   #FCE3E8;  /* airy pink wash */
+  --rose:         #E8849B;  /* medium rose */
+  --rose-deep:    #D4667A;  /* bold rose - CTA */
+  --sky:          #8CC3DE;  /* saturated pastel blue */
+  --sky-soft:     #DBEEF7;  /* airy blue wash */
+  --sky-deep:     #5FA5C7;  /* bold blue */
+  --butter:       #F6D77A;  /* saturated butter yellow */
+  --butter-soft:  #FDEFC6;  /* airy butter wash */
+  --sage:         #B8CC9E;  /* fresh sage */
+  --coral:        #F0A28F;  /* warm coral accent */
+  --indigo:       #3D4F8F;  /* deep accent */
 
-  /* ── Utility ── */
-  --text-dark: #2C1D12;
-  --text-muted: #7A7068;
-  --text-light: #FAF6F0;
-  --border-subtle: rgba(44, 29, 18, 0.08);
+  /* ── Text ── */
+  --text-dark:    #3A2A1F;
+  --text-muted:   #7A6D63;
+  --text-light:   #FFF9F3;
+  --border-subtle: rgba(58, 42, 31, 0.08);
 
   /* ── Spacing ── */
   --space-xs: 0.5rem;
@@ -39,6 +44,20 @@
 
   --container-max: 1100px;
   --container-narrow: 640px;
+
+  /* ── Radii ── */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-xl: 2rem;
+  --radius-pill: 999px;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 2px 8px rgba(58, 42, 31, 0.06);
+  --shadow-md: 0 8px 24px rgba(58, 42, 31, 0.08);
+  --shadow-lg: 0 16px 48px rgba(58, 42, 31, 0.12);
+  --shadow-rose: 0 8px 24px rgba(212, 102, 122, 0.25);
+  --shadow-sky: 0 8px 24px rgba(95, 165, 199, 0.22);
 }
 
 *, *::before, *::after {
@@ -59,6 +78,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 img, svg { display: block; max-width: 100%; height: auto; }
@@ -69,19 +89,37 @@ ul, ol { list-style: none; }
 h1, h2, h3, h4 {
   font-family: 'Lora', serif;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.15;
   letter-spacing: -0.02em;
+  color: var(--text-dark);
 }
 
-h1 { font-size: clamp(2.5rem, 6vw, 4rem); }
-h2 { font-size: clamp(1.75rem, 4vw, 2.75rem); }
+h1 { font-size: clamp(2.75rem, 6.5vw, 4.5rem); font-weight: 700; }
+h2 { font-size: clamp(2rem, 4.5vw, 3rem); }
 h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
 
 p {
   max-width: 60ch;
-  line-height: 1.8;
+  line-height: 1.75;
 }
 
+/* Script accent - used for "even better", "good", etc. */
+.script {
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 0.95;
+  font-size: 1.25em;
+  display: inline-block;
+  transform: rotate(-1.5deg);
+}
+
+.script--rose   { color: var(--rose-deep); }
+.script--sky    { color: var(--sky-deep); }
+.script--butter { color: #C89F2B; }
+
+/* ── Layout ── */
 .container {
   width: 100%;
   max-width: var(--container-max);
@@ -95,6 +133,7 @@ p {
 
 .section {
   padding: var(--space-xl) 0;
+  position: relative;
 }
 
 @media (max-width: 768px) {
@@ -104,19 +143,32 @@ p {
 .text-center { text-align: center; }
 .mx-auto { margin-left: auto; margin-right: auto; }
 
+/* ── Buttons ── */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   padding: 1rem 2.25rem;
-  border-radius: 50px;
+  border-radius: var(--radius-pill);
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
-  transition: all 0.3s ease;
+  letter-spacing: 0.01em;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
   white-space: nowrap;
+  position: relative;
+}
+
+.btn--rose {
+  background: linear-gradient(135deg, var(--rose) 0%, var(--rose-deep) 100%);
+  color: white;
+  box-shadow: var(--shadow-rose);
+}
+
+.btn--rose:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(212, 102, 122, 0.35);
 }
 
 .btn--primary {
@@ -125,20 +177,9 @@ p {
 }
 
 .btn--primary:hover {
-  background: var(--charcoal);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 20px rgba(44, 29, 18, 0.2);
-}
-
-.btn--rose {
-  background: var(--rose-deep);
-  color: white;
-}
-
-.btn--rose:hover {
-  background: #c7808a;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 20px rgba(212, 146, 154, 0.3);
+  background: #1d130a;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
 }
 
 .btn--large {
@@ -146,6 +187,7 @@ p {
   font-size: 1.0625rem;
 }
 
+/* ── Utility ── */
 .sr-only {
   position: absolute;
   width: 1px; height: 1px;
@@ -155,3 +197,16 @@ p {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* ── Floating confetti dots (decorative) ── */
+.confetti {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.75;
+}
+.confetti--blush  { background: var(--blush); }
+.confetti--sky    { background: var(--sky); }
+.confetti--butter { background: var(--butter); }
+.confetti--sage   { background: var(--sage); }
+.confetti--coral  { background: var(--coral); }
