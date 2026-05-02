@@ -4,9 +4,9 @@
  * Validates Cloudflare Turnstile token, then posts to Notion database.
  *
  * Environment variables (set in Cloudflare Pages dashboard):
- *   TURNSTILE_SECRET_KEY  — Cloudflare Turnstile secret key
- *   NOTION_API_KEY        — Notion integration token
- *   NOTION_DATABASE_ID    — Notion database ID for waitlist
+ *   TURNSTILE_SECRET_KEY  : Cloudflare Turnstile secret key
+ *   NOTION_API_KEY        : Notion integration token
+ *   NOTION_DATABASE_ID    : Notion database ID for waitlist
  */
 
 interface Env {

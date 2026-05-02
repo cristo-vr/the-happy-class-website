@@ -23,19 +23,21 @@ const jsonLd = {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Happy Class - Making Something Good Even Better</title>
-  <meta name="description" content="The Happy Class for Couples - a DIY alternative to couples counseling. A physical kit couples do together. Not therapy. Not fixing. Just making something good even better." />
+  <title>The Happy Class: Making Something Good Even Better</title>
+  <meta name="description" content="The Happy Class for Couples. A DIY alternative to couples counseling. A physical kit couples do together. Not therapy. Not fixing. Just making something good even better." />
 
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="The Happy Class - Making Something Good Even Better" />
+  <meta property="og:title" content="The Happy Class: Making Something Good Even Better" />
   <meta property="og:description" content="A DIY alternative to couples counseling. A physical kit couples do together. Coming October 2026." />
   <meta property="og:url" content="https://thehappyclass.com" />
   <meta property="og:site_name" content="The Happy Class" />
   <meta name="twitter:card" content="summary_large_image" />
 
+  <meta name="theme-color" content="#0A0A0A" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
 
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
@@ -43,63 +45,97 @@ const jsonLd = {
 </head>
 <body>
 
+  <!-- ═══ HEADER ═══ -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="#top" class="wordmark">The Happy Class</a>
+      <a href="#waitlist-hero" class="btn btn--ghost">Join the Waitlist</a>
+    </div>
+  </header>
+
   <!-- ═══ HERO ═══ -->
-  <section class="hero">
+  <section class="hero" id="top">
     <div class="hero__bg" aria-hidden="true">
-      <div class="hero__blob hero__blob--1"></div>
-      <div class="hero__blob hero__blob--2"></div>
-      <div class="hero__blob hero__blob--3"></div>
-      <span class="confetti confetti--blush"  style="width:14px;height:14px;top:18%;left:12%;"></span>
-      <span class="confetti confetti--sky"    style="width:10px;height:10px;top:32%;right:18%;"></span>
-      <span class="confetti confetti--butter" style="width:18px;height:18px;top:72%;left:22%;"></span>
-      <span class="confetti confetti--coral"  style="width:8px;height:8px;top:65%;right:28%;"></span>
-      <span class="confetti confetti--sage"   style="width:12px;height:12px;top:22%;left:46%;"></span>
+      <div class="hero__grid-pattern"></div>
+      <div class="hero__glow hero__glow--gold"></div>
+      <div class="hero__glow hero__glow--deep"></div>
     </div>
-    <div class="container hero__grid">
-      <div class="hero__content">
-        <p class="hero__label">The Happy Class <span aria-hidden="true">·</span> for Couples</p>
-        <h1>Making something <span class="script script--rose">good</span><br />even <span class="hero__underline">better<svg viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2,9 C40,2 90,12 130,6 C160,2 180,8 198,5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>.</h1>
-        <p class="hero__sub">A DIY alternative to couples counseling. Not because something's broken - because you want to keep it great.</p>
-        <div class="hero__cta-row">
-          <a href="#waitlist" class="btn btn--primary btn--large">Join the Waitlist</a>
-          <p class="hero__launch">Launching <strong>October 2026</strong></p>
-        </div>
+
+    <div class="container hero__stack">
+      <div class="hero__chip">
+        <span class="hero__chip-dot"></span>
+        For Couples · Launching October 2026
       </div>
+
+      <h1 class="hero__title">
+        <span class="hero__title-top">Making something <span class="hero__title-italic">good</span></span>
+        <span class="hero__title-bottom"><span class="hero__title-italic hero__title-italic--lg">even better.</span></span>
+      </h1>
+
       <div class="hero__visual">
-        <img src="/images/hero.png" alt="A warm sunlit table with pink and blue cards, coffee mugs, and a pencil." />
-        <span class="confetti confetti--blush"  style="width:24px;height:24px;top:-12px;left:8%;"></span>
-        <span class="confetti confetti--butter" style="width:16px;height:16px;bottom:6%;right:-10px;"></span>
-        <span class="confetti confetti--sky"    style="width:20px;height:20px;bottom:-8px;left:24%;"></span>
+        <div class="hero__visual-frame">
+          <img src="/images/hero.png" alt="The Happy Class: a matte black lacquered box, open on dark walnut, with deep dusty-rose and slate-blue cards, brass pen, and antique-gold ribbon scattered around it." />
+          <div class="hero__visual-rule" aria-hidden="true"></div>
+          <div class="hero__visual-tag" aria-hidden="true">
+            <span class="hero__visual-tag-label">N°01</span>
+            <span class="hero__visual-tag-name">Couples Edition</span>
+          </div>
+        </div>
+
+        <div class="hero__floater hero__floater--card-rose" aria-hidden="true"></div>
+        <div class="hero__floater hero__floater--card-storm" aria-hidden="true"></div>
+        <div class="hero__floater hero__floater--dot" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__below">
+        <p class="hero__sub">A DIY alternative to couples counseling. Not because something's broken. Because you want to keep it great.</p>
+
+        <form class="waitlist-form waitlist-form--hero" id="waitlist-form-hero" data-waitlist>
+          <div class="waitlist-form__row">
+            <input type="text" name="name" placeholder="First name" class="waitlist-input waitlist-input--name" autocomplete="given-name" />
+            <input type="email" name="email" placeholder="Your email" class="waitlist-input" required autocomplete="email" />
+            <button type="submit" class="btn btn--gold waitlist-submit">
+              <span class="submit-text">Join the Waitlist</span>
+              <span class="submit-loading" style="display:none;">Adding…</span>
+            </button>
+          </div>
+          <input type="text" name="company" autocomplete="off" tabindex="-1" class="waitlist-honey" aria-hidden="true" />
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAADAiulObYttIgvz0" data-theme="dark" data-size="flexible"></div>
+          <div class="waitlist-status" role="alert"></div>
+        </form>
+
+        <p class="hero__fineprint">No spam. One email when it's ready. That's it.</p>
       </div>
     </div>
+
+    <a href="#what" class="hero__scroll" aria-label="See what's inside">
+      <span>Scroll</span>
+      <span class="hero__scroll-line"></span>
+    </a>
   </section>
 
   <!-- ═══ THE PROBLEM ═══ -->
-  <section class="section bg-cream" id="what">
-    <div class="container text-center">
+  <section class="section" id="what">
+    <div class="container container--narrow text-center">
       <p class="overline">Here's the thing</p>
-      <h2>Most couples don't need therapy.<br />They need <span class="script script--sky">better structure.</span></h2>
-      <p class="mx-auto lead">You're not in crisis. You're not falling apart. You love each other. But somewhere along the way, the conversations got shorter, the check-ins stopped, and "we're fine" became the answer to everything. You're good. But you know you could be better.</p>
+      <h2>Most couples don't need therapy.<br />They need <span class="accent">better structure.</span></h2>
+      <p class="lead mx-auto">You're not in crisis. You're not falling apart. You love each other. But somewhere along the way, the conversations got shorter, the check-ins stopped, and "we're fine" became the answer to everything. You're good. But you know you could be better.</p>
     </div>
   </section>
 
   <!-- ═══ WHAT IT IS ═══ -->
-  <section class="section bg-linen">
-    <span class="confetti confetti--butter" style="width:14px;height:14px;top:10%;left:6%;"></span>
-    <span class="confetti confetti--sky"    style="width:10px;height:10px;bottom:14%;right:10%;"></span>
+  <section class="section bg-charcoal">
     <div class="container">
       <div class="split">
         <div class="split__content">
-          <p class="overline">What is The Happy Class?</p>
-          <h2>A kit you <span class="script script--sky">do together.</span></h2>
-          <p>The Happy Class is a physical product - a beautifully designed box that gives you and your partner the structure to have the conversations you've been putting off. Not heavy therapy conversations. Real ones. Honest ones. The kind that remind you why you chose each other.</p>
+          <p class="overline">What is The Happy Class</p>
+          <h2>A kit you do together.</h2>
+          <p>The Happy Class is a physical product. A beautifully designed box that gives you and your partner the structure to have the conversations you've been putting off. Not heavy therapy conversations. Real ones. Honest ones. The kind that remind you why you chose each other.</p>
           <p>It's guided. It's structured. It's actually fun. And when you're done, you know each other better than you did when you started.</p>
         </div>
         <div class="split__visual">
           <div class="product-frame">
-            <img src="/images/product-kit.png" alt="The Happy Class kit - a linen box with pink and blue paper cards, a pencil, and a ribbon." />
-            <span class="confetti confetti--coral"  style="width:18px;height:18px;top:-14px;right:-10px;"></span>
-            <span class="confetti confetti--sage"   style="width:12px;height:12px;bottom:10%;left:-14px;"></span>
+            <img src="/images/product-kit.png" alt="The Happy Class kit: a matte black lacquered box, open, revealing premium dusty-rose and slate-blue cards and a brass pen." />
           </div>
         </div>
       </div>
@@ -107,113 +143,91 @@ const jsonLd = {
   </section>
 
   <!-- ═══ WHO IT'S FOR ═══ -->
-  <section class="section bg-cream">
+  <section class="section">
     <div class="container text-center">
       <p class="overline">Who it's for</p>
-      <h2>Couples who are good -<br />and want to be <span class="script script--butter">great.</span></h2>
+      <h2>Couples who are good. And want to be <span class="accent">great.</span></h2>
 
       <div class="cards">
         <div class="card">
           <div class="card__media">
-            <img src="/images/vignette-couch.png" alt="Couple on a couch, laughing, holding pink and blue cards." />
+            <img src="/images/vignette-couch.png" alt="A closed black lacquered box on a side table beside a leather chair, low warm light." />
           </div>
           <h3>You're solid</h3>
-          <p>You're not in trouble. You're not looking for a lifeline. You just know that good relationships don't maintain themselves - they need attention.</p>
+          <p>You're not in trouble. You're not looking for a lifeline. You just know that good relationships don't maintain themselves. They need attention.</p>
         </div>
         <div class="card">
           <div class="card__media">
-            <img src="/images/vignette-coffee.png" alt="Couple at a cafe table, reading their cards in warm morning light." />
+            <img src="/images/vignette-coffee.png" alt="Two espresso cups across a dark walnut table, two cards between them, one dusty rose, one slate blue." />
           </div>
           <h3>You want to talk</h3>
-          <p>Not about logistics. Not about the kids' schedule. You want the real stuff - the stuff that gets buried under busy. You just need a way in.</p>
+          <p>Not about logistics. Not about the kids' schedule. You want the real stuff, the stuff that gets buried under busy. You just need a way in.</p>
         </div>
         <div class="card">
           <div class="card__media">
-            <img src="/images/vignette-walk.png" alt="Couple walking together on a tree-lined path." />
+            <img src="/images/vignette-walk.png" alt="A man's hands holding the closed black box at chest height, charcoal cashmere sweater." />
           </div>
           <h3>Therapy feels like too much</h3>
-          <p>You don't need a therapist. You don't need a crisis. You just need a framework that makes it easy to check in with each other - on your own terms, in your own home.</p>
+          <p>You don't need a therapist. You don't need a crisis. You just need a framework that makes it easy to check in, on your own terms, in your own home.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ HOW IT WORKS ═══ -->
-  <section class="section bg-gradient-sunrise">
-    <span class="confetti confetti--blush"  style="width:18px;height:18px;top:12%;right:8%;"></span>
-    <span class="confetti confetti--sky"    style="width:14px;height:14px;bottom:10%;left:6%;"></span>
+  <!-- ═══ THE MECHANIC (pink + blue) ═══ -->
+  <section class="section bg-charcoal">
     <div class="container">
       <div class="text-center" style="margin-bottom: var(--space-lg);">
-        <p class="overline">How it works</p>
-        <h2>Simple. Intentional. <span class="script script--sky">Yours.</span></h2>
+        <p class="overline">Inside the box</p>
+        <h2>Two papers. <span class="accent">One conversation.</span></h2>
+        <p class="lead mx-auto" style="margin-top: 1.25rem;">There are things only your partner can see in you. There are things only you know about yourself. The kit is the third party in the room, the one that holds the structure so the two of you don't have to.</p>
       </div>
 
-      <div class="steps">
-        <div class="step">
-          <span class="step__number">01</span>
-          <div class="step__media">
-            <img src="/images/paper-pink.png" alt="A blush-pink paper card on cream linen." />
-          </div>
-          <h3>Pick up the <span class="script script--rose">pink</span> paper.</h3>
-          <p>Write about your partner. What you see. What you appreciate. What you wish they knew.</p>
-        </div>
-        <div class="step">
-          <span class="step__number">02</span>
-          <div class="step__media">
-            <img src="/images/paper-blue.png" alt="A sky-blue paper card on cream linen." />
-          </div>
-          <h3>Pick up the <span class="script script--sky">blue</span> paper.</h3>
-          <p>Write about yourself. What you need. What you're carrying. What you haven't said out loud yet.</p>
-        </div>
-        <div class="step">
-          <span class="step__number">03</span>
-          <div class="step__media">
-            <img src="/images/paper-both.png" alt="Pink and blue paper cards overlapping on linen." />
-          </div>
-          <h3>Come <span class="script script--butter">together.</span></h3>
-          <p>Share what you wrote. Follow the guided prompts. Have the conversation. It's not about being perfect - it's about being present.</p>
-        </div>
+      <div class="papers">
+        <figure class="paper paper--rose">
+          <img src="/images/paper-pink.png" alt="A deep dusty-rose card on charcoal linen with a small gold-foil corner mark." />
+          <figcaption>For what only you can see in them.</figcaption>
+        </figure>
+        <figure class="paper paper--storm">
+          <img src="/images/paper-blue.png" alt="A muted slate storm-blue card on charcoal linen with a small gold-foil corner mark." />
+          <figcaption>For what only you know about you.</figcaption>
+        </figure>
       </div>
 
       <div class="text-center" style="margin-top: var(--space-lg);">
-        <p class="tiny-note">Think of it as an annual relationship check-in. Like a physical for your partnership.</p>
+        <p class="tiny-note">Think of it as an annual relationship check-in. A physical for your partnership.</p>
       </div>
     </div>
   </section>
 
-  <!-- ═══ THE VISION ═══ -->
-  <section class="section bg-cream">
+  <!-- ═══ THE VISION (Sandra) ═══ -->
+  <section class="section">
     <div class="container container--narrow text-center">
       <div class="sandra-portrait">
-        <img src="/images/sandra-portrait.png" alt="Watercolor portrait of Sandra Weise." />
-        <span class="confetti confetti--blush"  style="width:18px;height:18px;top:-4px;right:-10px;"></span>
-        <span class="confetti confetti--sky"    style="width:14px;height:14px;bottom:4px;left:-14px;"></span>
-        <span class="confetti confetti--butter" style="width:12px;height:12px;top:30%;right:-18px;"></span>
+        <img src="/images/sandra-portrait.png" alt="Editorial portrait of Sandra Weise." />
       </div>
       <p class="overline">The story behind it</p>
-      <h2>Twenty years of sitting across from people in the moments that <span class="script script--sky">matter most.</span></h2>
-      <p class="mx-auto" style="margin-top: 1.5rem;">I'm Sandra Weise. I've been a life coach for over two decades. I've sat with thousands of people - couples, families, individuals - at the exact moment they realize something needs to change.</p>
-      <p class="mx-auto">Here's what I've learned: most couples who walk into a coaching session aren't broken. They're just out of practice. They stopped checking in. They stopped asking each other the real questions. And over time, "fine" replaced "great."</p>
-      <p class="mx-auto">The Happy Class is everything I've learned about what makes relationships work - distilled into something you can do at home, together, without a coach in the room. Because you don't need me. You need each other. And a better structure.</p>
-      <p class="mx-auto" style="margin-top: 1.5rem;"><a href="https://sandraweise.com" class="text-link">More about Sandra &rarr;</a></p>
+      <h2>Twenty years of sitting across from people in the moments that <span class="accent">matter most.</span></h2>
+      <p class="lead mx-auto" style="margin-top: 1.5rem;">I'm Sandra Weise. I've been a life coach for over two decades. I've sat with thousands of people. Couples, families, individuals. At the exact moment they realize something needs to change.</p>
+      <p class="mx-auto" style="margin-top: 1rem;">Here's what I've learned: most couples who walk into a coaching session aren't broken. They're just out of practice. They stopped checking in. They stopped asking each other the real questions. And over time, "fine" replaced "great."</p>
+      <p class="mx-auto" style="margin-top: 1rem;">The Happy Class is everything I've learned about what makes relationships work, distilled into something you can do at home, together, without a coach in the room. Because you don't need me. You need each other. And a better structure.</p>
+      <p style="margin-top: 2rem;"><a href="https://sandraweise.com" class="text-link">More about Sandra &rarr;</a></p>
     </div>
   </section>
 
   <!-- ═══ SOCIAL PROOF ═══ -->
-  <section class="section bg-sky-soft">
+  <section class="section bg-charcoal">
     <div class="container">
       <div class="split split--reverse">
         <div class="split__visual">
           <div class="product-frame">
-            <img src="/images/social-proof.png" alt="A man's hand holding a blue paper card on a warm wooden table." />
-            <span class="confetti confetti--blush" style="width:16px;height:16px;top:-10px;left:-12px;"></span>
-            <span class="confetti confetti--butter" style="width:12px;height:12px;bottom:8%;right:-10px;"></span>
+            <img src="/images/social-proof.png" alt="A man's hand holding a slate-blue card beside the black lacquered box and a black ceramic coffee mug." />
           </div>
         </div>
         <div class="split__content">
           <p class="overline">Validated</p>
-          <h2>We tested it. <span class="script script--rose">Men loved it.</span></h2>
-          <p>We put The Happy Class in front of men - the audience most likely to resist anything that sounds like therapy. The response blew us away. They loved the name. They loved the concept. They didn't feel like they were being asked to "fix" something. They felt invited to do something good for their relationship.</p>
+          <h2>We tested it. <span class="accent">Men loved it.</span></h2>
+          <p>We put The Happy Class in front of men, the audience most likely to resist anything that sounds like therapy. The response blew us away. They loved the name. They loved the concept. They didn't feel like they were being asked to "fix" something. They felt invited to do something good for their relationship.</p>
           <blockquote class="pull-quote">
             "It doesn't feel like therapy. It feels like something I'd actually want to do with my partner."
           </blockquote>
@@ -223,11 +237,11 @@ const jsonLd = {
   </section>
 
   <!-- ═══ THE ROADMAP ═══ -->
-  <section class="section bg-cream">
+  <section class="section">
     <div class="container text-center">
       <p class="overline">What's coming</p>
-      <h2>Couples first.<br />Then <span class="script script--butter">everyone.</span></h2>
-      <p class="mx-auto" style="margin-bottom: var(--space-lg);">The Happy Class for Couples is just the beginning. The same framework works for every relationship that matters.</p>
+      <h2>Couples first.<br />Then <span class="accent">everyone.</span></h2>
+      <p class="lead mx-auto" style="margin: 1.5rem auto var(--space-lg);">The Happy Class for Couples is just the beginning. The same framework works for every relationship that matters.</p>
 
       <div class="roadmap">
         <div class="roadmap__item roadmap__item--active">
@@ -247,41 +261,40 @@ const jsonLd = {
         </div>
         <div class="roadmap__item">
           <span class="roadmap__dot"></span>
-          <h4>Mothers & Daughters</h4>
+          <h4>Mothers &amp; Daughters</h4>
           <p>2027</p>
         </div>
         <div class="roadmap__item">
           <span class="roadmap__dot"></span>
-          <h4>Fathers & Sons</h4>
+          <h4>Fathers &amp; Sons</h4>
           <p>2027</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ═══ WAITLIST ═══ -->
-  <section class="section bg-espresso" id="waitlist">
-    <span class="confetti confetti--blush"  style="width:16px;height:16px;top:18%;left:12%;opacity:0.35;"></span>
-    <span class="confetti confetti--sky"    style="width:14px;height:14px;top:70%;right:14%;opacity:0.35;"></span>
-    <span class="confetti confetti--butter" style="width:12px;height:12px;top:28%;right:22%;opacity:0.3;"></span>
+  <!-- ═══ WAITLIST (final CTA) ═══ -->
+  <section class="section bg-charcoal" id="waitlist">
     <div class="container container--narrow text-center">
-      <h2 style="color: var(--linen);">Be the <span class="script script--butter">first</span> to know.</h2>
-      <p style="color: rgba(250,246,240,0.7); margin: 1rem auto 2.5rem; max-width: 480px;">The Happy Class for Couples launches October 2026. Drop your email and we'll let you know the moment it's ready.</p>
+      <p class="overline">Be the first</p>
+      <h2>Save your spot.</h2>
+      <p class="lead mx-auto" style="margin: 1.25rem auto 2.5rem;">The Happy Class for Couples launches October 2026. Drop your email and we'll let you know the moment it's ready.</p>
 
-      <form id="waitlist-form" class="waitlist-form">
+      <form class="waitlist-form" id="waitlist-form-bottom" data-waitlist>
         <div class="waitlist-form__row">
-          <input type="text" name="name" placeholder="First name (optional)" class="waitlist-input" />
-          <input type="email" name="email" placeholder="Your email" class="waitlist-input" required />
+          <input type="text" name="name" placeholder="First name" class="waitlist-input" autocomplete="given-name" />
+          <input type="email" name="email" placeholder="Your email" class="waitlist-input" required autocomplete="email" />
         </div>
-        <div class="cf-turnstile" data-sitekey="0x4AAAAAADAiulObYttIgvz0" data-theme="dark"></div>
-        <button type="submit" class="btn btn--rose btn--large waitlist-submit" id="waitlist-btn">
+        <input type="text" name="company" autocomplete="off" tabindex="-1" class="waitlist-honey" aria-hidden="true" />
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAADAiulObYttIgvz0" data-theme="dark" data-size="flexible"></div>
+        <button type="submit" class="btn btn--gold btn--large waitlist-submit">
           <span class="submit-text">Join the Waitlist</span>
-          <span class="submit-loading" style="display:none;">Adding you...</span>
+          <span class="submit-loading" style="display:none;">Adding you…</span>
         </button>
-        <div id="waitlist-status" class="waitlist-status" role="alert"></div>
+        <div class="waitlist-status" role="alert"></div>
       </form>
 
-      <p style="color: rgba(250,246,240,0.4); font-size: 0.8125rem; margin-top: 1.5rem;">No spam. Just one email when it's time. That's it.</p>
+      <p class="waitlist-fineprint">No spam. One email when it's ready. That's it.</p>
     </div>
   </section>
 
@@ -289,12 +302,12 @@ const jsonLd = {
   <footer class="footer">
     <div class="container text-center">
       <p class="footer__brand">The Happy Class</p>
-      <p class="footer__tagline">Making something good <span class="script script--rose">even better.</span></p>
+      <p class="footer__tagline">Making something good <span class="accent">even better.</span></p>
       <div class="footer__links">
         <a href="https://sandraweise.com" target="_blank" rel="noopener noreferrer">sandraweise.com</a>
-        <span class="footer__sep">&middot;</span>
+        <span class="footer__sep">·</span>
         <a href="https://www.instagram.com/sandraweise/" target="_blank" rel="noopener noreferrer">Instagram</a>
-        <span class="footer__sep">&middot;</span>
+        <span class="footer__sep">·</span>
         <a href="https://sandraweise.com/podcast" target="_blank" rel="noopener noreferrer">A Better Question</a>
       </div>
       <p class="footer__copy">&copy; {new Date().getFullYear()} The Happy Class. All rights reserved.</p>
@@ -308,70 +321,101 @@ const jsonLd = {
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 
 <script>
-  const form = document.getElementById('waitlist-form') as HTMLFormElement;
-  const btn = document.getElementById('waitlist-btn')!;
-  const status = document.getElementById('waitlist-status')!;
+  document.querySelectorAll<HTMLFormElement>('form[data-waitlist]').forEach((form) => {
+    const btn = form.querySelector('.waitlist-submit') as HTMLButtonElement;
+    const status = form.querySelector('.waitlist-status')!;
+    const submitText = btn.querySelector('.submit-text') as HTMLElement;
+    const submitLoading = btn.querySelector('.submit-loading') as HTMLElement;
 
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    const turnstileInput = form.querySelector('[name="cf-turnstile-response"]') as HTMLInputElement;
-    const token = turnstileInput?.value;
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const turnstileInput = form.querySelector('[name="cf-turnstile-response"]') as HTMLInputElement;
+      const token = turnstileInput?.value;
 
-    if (!token) {
-      status.className = 'waitlist-status error';
-      status.textContent = 'Please complete the verification.';
-      return;
-    }
-
-    (btn as HTMLButtonElement).disabled = true;
-    btn.querySelector('.submit-text')!.style.display = 'none';
-    btn.querySelector('.submit-loading')!.style.display = 'inline';
-    status.className = 'waitlist-status';
-    status.textContent = '';
-
-    const fd = new FormData(form);
-    try {
-      const res = await fetch('/api/waitlist', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: fd.get('name') || '',
-          email: fd.get('email'),
-          token,
-        }),
-      });
-      if (res.ok) {
-        status.className = 'waitlist-status success';
-        status.textContent = "You're on the list. We'll be in touch.";
-        form.reset();
-        if (window.turnstile) window.turnstile.reset();
-      } else {
-        const err = await res.json().catch(() => ({ error: 'Something went wrong.' }));
+      if (!token) {
         status.className = 'waitlist-status error';
-        status.textContent = err.error || 'Something went wrong. Try again.';
+        status.textContent = 'Please complete the verification.';
+        return;
       }
-    } catch {
-      status.className = 'waitlist-status error';
-      status.textContent = 'Network error. Please try again.';
-    } finally {
-      (btn as HTMLButtonElement).disabled = false;
-      btn.querySelector('.submit-text')!.style.display = 'inline';
-      btn.querySelector('.submit-loading')!.style.display = 'none';
-    }
+
+      btn.disabled = true;
+      submitText.style.display = 'none';
+      submitLoading.style.display = 'inline';
+      status.className = 'waitlist-status';
+      status.textContent = '';
+
+      const fd = new FormData(form);
+      try {
+        const res = await fetch('/api/waitlist', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: fd.get('name') || '',
+            email: fd.get('email'),
+            token,
+          }),
+        });
+        if (res.ok) {
+          status.className = 'waitlist-status success';
+          status.textContent = "You're on the list. We'll be in touch.";
+          form.reset();
+          if (window.turnstile) window.turnstile.reset();
+        } else {
+          const err = await res.json().catch(() => ({ error: 'Something went wrong.' }));
+          status.className = 'waitlist-status error';
+          status.textContent = err.error || 'Something went wrong. Try again.';
+        }
+      } catch {
+        status.className = 'waitlist-status error';
+        status.textContent = 'Network error. Please try again.';
+      } finally {
+        btn.disabled = false;
+        submitText.style.display = 'inline';
+        submitLoading.style.display = 'none';
+      }
+    });
   });
 </script>
 
 <style>
+  /* ═══ HEADER ═══ */
+  .site-header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 50;
+    background: rgba(10, 10, 10, 0.78);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--hairline);
+  }
+  .site-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .wordmark {
+    font-family: 'Allura', cursive;
+    font-weight: 400;
+    font-size: 1.875rem;
+    line-height: 1;
+    letter-spacing: 0;
+    color: var(--gold);
+    transition: color 0.25s ease;
+  }
+  .wordmark:hover { color: var(--gold-bright); }
+
   /* ═══ HERO ═══ */
   .hero {
     position: relative;
-    min-height: 92vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(140deg, var(--linen) 0%, var(--blush-soft) 30%, var(--sky-soft) 65%, var(--butter-soft) 100%);
+    padding: 7.5rem 0 6rem;
     overflow: hidden;
-    padding: 6rem 0 4rem;
+    background: var(--ink);
   }
 
   .hero__bg {
@@ -381,231 +425,459 @@ const jsonLd = {
     overflow: hidden;
   }
 
-  .hero__blob {
+  .hero__grid-pattern {
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle, rgba(212, 175, 55, 0.07) 1px, transparent 1px);
+    background-size: 28px 28px;
+    background-position: 0 0;
+    mask-image: radial-gradient(ellipse at 50% 40%, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at 50% 40%, black 30%, transparent 80%);
+    opacity: 0.85;
+  }
+
+  .hero__glow {
     position: absolute;
     border-radius: 50%;
-    filter: blur(60px);
-    opacity: 0.55;
+    filter: blur(120px);
+    pointer-events: none;
   }
-  .hero__blob--1 { width: 520px; height: 520px; background: var(--blush); top: -140px; right: -80px; }
-  .hero__blob--2 { width: 420px; height: 420px; background: var(--sky); bottom: -120px; left: -100px; }
-  .hero__blob--3 { width: 300px; height: 300px; background: var(--butter); top: 40%; left: 45%; opacity: 0.4; }
+  .hero__glow--gold {
+    width: 520px;
+    height: 520px;
+    background: rgba(212, 175, 55, 0.18);
+    top: 8%;
+    right: -8%;
+  }
+  .hero__glow--deep {
+    width: 460px;
+    height: 460px;
+    background: rgba(155, 107, 114, 0.14);
+    bottom: -10%;
+    left: -8%;
+  }
 
-  .hero__grid {
+  .hero__stack {
     position: relative;
     z-index: 2;
-    display: grid;
-    grid-template-columns: 1.05fr 1fr;
-    gap: 3.5rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: 2rem;
   }
 
-  .hero__content {
-    text-align: left;
-  }
-
-  .hero__label {
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.28em;
+  .hero__chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.4rem 0.875rem;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: var(--radius-pill);
+    background: rgba(212, 175, 55, 0.06);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
-    color: var(--rose-deep);
-    margin-bottom: 1.5rem;
+    color: var(--gold);
+    margin: 0;
+  }
+  .hero__chip-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.18);
+    animation: chip-pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes chip-pulse {
+    0%, 100% { box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.18); }
+    50%      { box-shadow: 0 0 0 6px rgba(212, 175, 55, 0.04); }
   }
 
-  .hero h1 {
-    margin-bottom: 1.5rem;
-    max-width: 560px;
+  .hero__title {
+    display: contents;
+    margin: 0;
+  }
+  .hero__title-top,
+  .hero__title-bottom {
+    display: block;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.035em;
+    color: var(--pearl);
+    margin: 0;
+  }
+  .hero__title-top {
+    font-size: clamp(2.5rem, 6.5vw, 5rem);
+  }
+  .hero__title-bottom {
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    order: 2;          /* render after the visual */
+  }
+  .hero__visual    { order: 1; }
+  .hero__below     { order: 3; }
+  .hero__title-italic {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--gold);
+  }
+  .hero__title-italic--lg {
+    font-size: 1em;
   }
 
-  .hero__underline {
-    position: relative;
-    display: inline-block;
-    color: var(--rose-deep);
-  }
-  .hero__underline svg {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -0.18em;
+  .hero__below {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
     width: 100%;
-    height: 0.5em;
-    color: var(--butter);
+    margin-top: 0.5rem;
   }
 
   .hero__sub {
     font-size: 1.125rem;
-    color: var(--text-dark);
-    max-width: 520px;
-    margin: 0 0 2.25rem;
+    color: var(--silver);
+    max-width: 560px;
+    margin: 0;
     line-height: 1.7;
-    opacity: 0.82;
   }
 
-  .hero__cta-row {
+  /* Inline waitlist form (hero variant) */
+  .waitlist-form--hero {
+    width: 100%;
+    max-width: 640px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-  }
-
-  .hero__launch {
-    font-size: 0.875rem;
-    color: var(--text-muted);
+    gap: 0.75rem;
     margin: 0;
   }
+  .waitlist-form--hero .waitlist-form__row {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .waitlist-form--hero .waitlist-input {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 1rem 1.125rem;
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--pearl);
+    border-radius: var(--radius-sm);
+    font-size: 0.9375rem;
+    transition: border-color 0.2s ease, background 0.2s ease;
+  }
+  .waitlist-form--hero .waitlist-input--name {
+    flex: 0 1 180px;
+  }
+  .waitlist-form--hero .waitlist-input::placeholder {
+    color: var(--ash);
+  }
+  .waitlist-form--hero .waitlist-input:focus {
+    outline: none;
+    border-color: var(--gold);
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .waitlist-form--hero .waitlist-submit {
+    padding: 1rem 1.5rem;
+    flex: 0 0 auto;
+  }
+  .waitlist-honey {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+  }
 
+  .hero__fineprint {
+    font-size: 0.8125rem;
+    color: var(--ash);
+    letter-spacing: 0.04em;
+    margin: 0;
+    max-width: none;
+  }
+
+  /* Visual (centered, between title rows) */
   .hero__visual {
     position: relative;
+    width: 100%;
+    max-width: 760px;
+    margin: 0.75rem auto;
+    perspective: 1200px;
   }
+
+  .hero__visual-frame {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: visible;
+    transform: rotate(0.4deg);
+    transition: transform 0.6s ease;
+  }
+  .hero__visual-frame::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: var(--radius-md);
+    padding: 1px;
+    background: linear-gradient(140deg, rgba(212, 175, 55, 0.5), rgba(212, 175, 55, 0) 35%, rgba(212, 175, 55, 0) 65%, rgba(212, 175, 55, 0.3));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+  }
+  .hero__visual-frame:hover { transform: rotate(0deg); }
 
   .hero__visual img {
     width: 100%;
     height: auto;
-    border-radius: var(--radius-xl);
-    box-shadow: var(--shadow-lg);
-    aspect-ratio: 16 / 11;
+    aspect-ratio: 16 / 10;
     object-fit: cover;
-    transform: rotate(1deg);
+    border-radius: var(--radius-md);
+    box-shadow:
+      0 30px 60px rgba(0, 0, 0, 0.6),
+      0 0 0 1px var(--hairline);
+    display: block;
+  }
+
+  .hero__visual-rule {
+    position: absolute;
+    top: -18px;
+    left: 24px;
+    width: 56px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .hero__visual-tag {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0.5rem 0.75rem;
+    background: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-sm);
+  }
+  .hero__visual-tag-label {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 0.875rem;
+    color: var(--gold);
+  }
+  .hero__visual-tag-name {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--silver);
+  }
+
+  /* Floating decorative elements */
+  .hero__floater {
+    position: absolute;
+    border-radius: var(--radius-sm);
+    pointer-events: none;
+  }
+  .hero__floater--card-rose {
+    width: 96px;
+    height: 128px;
+    background: linear-gradient(160deg, #9B6B72, #7A4F58);
+    top: -36px;
+    right: -32px;
+    transform: rotate(-9deg);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(212, 175, 55, 0.18);
+    animation: float-card 7s ease-in-out infinite;
+  }
+  .hero__floater--card-rose::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 10px;
+    height: 10px;
+    background: var(--gold);
+    border-radius: 1px;
+    opacity: 0.85;
+    transform: rotate(45deg);
+  }
+  .hero__floater--card-storm {
+    width: 84px;
+    height: 112px;
+    background: linear-gradient(160deg, #5A6F84, #3F5165);
+    bottom: -32px;
+    right: -28px;
+    transform: rotate(8deg);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.55), inset 0 0 0 1px rgba(212, 175, 55, 0.18);
+    animation: float-card 8.5s ease-in-out infinite reverse;
+  }
+  .hero__floater--card-storm::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 9px;
+    height: 9px;
+    background: var(--gold);
+    border-radius: 1px;
+    opacity: 0.85;
+    transform: rotate(45deg);
+  }
+  .hero__floater--dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 6px rgba(212, 175, 55, 0.12);
+    top: 38%;
+    left: -28px;
+  }
+  @keyframes float-card {
+    0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); }
+    50%      { transform: translateY(-8px) rotate(var(--r, 0deg)); }
+  }
+  .hero__floater--card-rose  { --r: -9deg; }
+  .hero__floater--card-storm { --r: 8deg; }
+
+  /* Scroll indicator */
+  .hero__scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 1.25rem;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.625rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--ash);
+    transition: color 0.25s ease;
+    z-index: 2;
+  }
+  .hero__scroll-line { height: 22px; }
+  .hero__scroll:hover { color: var(--gold); }
+  .hero__scroll-line {
+    display: block;
+    width: 1px;
+    height: 28px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
   }
 
   @media (max-width: 900px) {
-    .hero__grid { grid-template-columns: 1fr; gap: 2.5rem; }
-    .hero__content { text-align: center; }
-    .hero h1 { margin-left: auto; margin-right: auto; }
-    .hero__sub { margin-left: auto; margin-right: auto; }
-    .hero__cta-row { justify-content: center; }
+    .hero { min-height: auto; padding: 7rem 0 4rem; }
+    .hero__stack { gap: 1.5rem; }
+    .hero__visual { max-width: 100%; margin: 0.25rem auto; }
+    .hero__floater--card-rose  { width: 64px; height: 86px; top: -18px; right: -10px; }
+    .hero__floater--card-storm { width: 56px; height: 76px; bottom: -18px; right: -10px; }
+    .hero__floater--dot { left: -12px; }
+    .hero__scroll { display: none; }
   }
-
-  /* ═══ OVERLINES + LEADS ═══ */
-  .overline {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 0.6875rem;
-    font-weight: 700;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--text-dark);
-    margin-bottom: 0.75rem;
-    max-width: none;
-    opacity: 0.75;
-  }
-
-  .lead {
-    font-size: 1.125rem;
-    color: var(--text-muted);
-    margin-top: 1.25rem;
-  }
-
-  .tiny-note {
-    color: var(--text-muted);
-    font-size: 0.9375rem;
-    margin: 0 auto;
-    max-width: 44ch;
-    opacity: 0.85;
-  }
-
-  /* ═══ BG VARIANTS ═══ */
-  .bg-cream       { background: var(--cream); }
-  .bg-linen       { background: var(--linen); }
-  .bg-espresso    { background: var(--espresso); }
-  .bg-blush-soft  { background: var(--blush-soft); }
-  .bg-sky-soft    { background: var(--sky-soft); }
-  .bg-gradient-sunrise {
-    background: linear-gradient(145deg, var(--blush-soft) 0%, var(--butter-soft) 55%, var(--sky-soft) 100%);
+  @media (max-width: 540px) {
+    .waitlist-form--hero .waitlist-form__row { flex-direction: column; }
+    .waitlist-form--hero .waitlist-submit { width: 100%; }
+    .waitlist-form--hero .waitlist-input--name { flex: 1; }
   }
 
   /* ═══ SPLIT LAYOUT ═══ */
   .split {
     display: grid;
-    grid-template-columns: 1.1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 4.5rem;
     align-items: center;
-  }
-  .split--reverse {
-    grid-template-columns: 1fr 1.1fr;
   }
   .split--reverse .split__visual { order: 0; }
   .split--reverse .split__content { order: 1; }
 
   .split__content p {
-    color: var(--text-dark);
-    opacity: 0.82;
     margin-bottom: 1.25rem;
-    font-size: 1.0625rem;
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.85;
     max-width: 52ch;
   }
 
-  .split__content h2 {
-    margin-bottom: 1.25rem;
-  }
+  .split__content h2 { margin-bottom: 1.5rem; }
 
   @media (max-width: 768px) {
-    .split, .split--reverse { grid-template-columns: 1fr; gap: 2.5rem; }
+    .split { grid-template-columns: 1fr; gap: 2.5rem; }
+    .split--reverse .split__visual { order: 1; }
+    .split--reverse .split__content { order: 0; }
   }
 
-  /* ═══ PRODUCT FRAME (shared image wrapper) ═══ */
+  /* ═══ PRODUCT FRAME ═══ */
   .product-frame {
     position: relative;
-    border-radius: var(--radius-xl);
-    overflow: visible;
+    border-radius: var(--radius-md);
+    overflow: hidden;
   }
   .product-frame img {
     width: 100%;
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-md);
     box-shadow: var(--shadow-lg);
     aspect-ratio: 4 / 3;
     object-fit: cover;
   }
 
-  /* ═══ CARDS ═══ */
+  /* ═══ CARDS (Who it's for) ═══ */
   .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.75rem;
+    gap: 1.5rem;
     margin-top: var(--space-lg);
   }
 
   .card {
-    background: white;
-    border-radius: var(--radius-lg);
-    padding: 0;
+    background: var(--graphite);
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-md);
     text-align: left;
-    box-shadow: var(--shadow-sm);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     position: relative;
+    transition: border-color 0.3s ease, transform 0.3s ease;
   }
 
   .card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
+    border-color: rgba(212, 175, 55, 0.35);
+    transform: translateY(-2px);
   }
 
   .card__media {
     aspect-ratio: 1 / 1;
     overflow: hidden;
-    background: var(--blush-soft);
+    background: var(--charcoal);
   }
   .card__media img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.6s ease;
+    transition: transform 0.7s ease;
+    filter: saturate(0.92);
   }
   .card:hover .card__media img {
-    transform: scale(1.04);
+    transform: scale(1.03);
   }
 
   .card h3 {
-    margin: 1.5rem 1.75rem 0.5rem;
-    font-size: 1.25rem;
+    margin: 1.5rem 1.75rem 0.625rem;
+    color: var(--pearl);
   }
 
   .card p {
-    color: var(--text-muted);
+    color: var(--ash);
     font-size: 0.9375rem;
-    line-height: 1.7;
+    line-height: 1.75;
     padding: 0 1.75rem 1.75rem;
     margin: 0;
   }
@@ -614,96 +886,89 @@ const jsonLd = {
     .cards { grid-template-columns: 1fr; }
   }
 
-  /* ═══ STEPS ═══ */
-  .steps {
+  /* ═══ PAPERS (the mechanic) ═══ */
+  .papers {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 2.25rem;
-  }
-
-  .step {
-    text-align: center;
-    background: white;
-    border-radius: var(--radius-lg);
-    padding: 1.75rem 1.5rem 2rem;
-    box-shadow: var(--shadow-sm);
-    position: relative;
-  }
-
-  .step__number {
-    display: inline-block;
-    font-family: 'Caveat', cursive;
-    font-weight: 700;
-    font-size: 2rem;
-    color: var(--rose-deep);
-    line-height: 1;
-    margin-bottom: 0.5rem;
-  }
-
-  .step__media {
-    width: 100%;
-    aspect-ratio: 3 / 4;
-    max-width: 180px;
-    margin: 0.75rem auto 1.5rem;
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    box-shadow: var(--shadow-sm);
-  }
-  .step__media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .step h3 {
-    color: var(--text-dark);
-    font-size: 1.1875rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .step p {
-    color: var(--text-muted);
-    font-size: 0.9375rem;
-    line-height: 1.7;
-    max-width: 280px;
+    max-width: 880px;
     margin: 0 auto;
   }
-
-  @media (max-width: 768px) {
-    .steps { grid-template-columns: 1fr; gap: 1.5rem; }
+  .paper {
+    text-align: center;
+    margin: 0;
+  }
+  .paper img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--hairline);
+  }
+  .paper figcaption {
+    margin-top: 1.5rem;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1.0625rem;
+    color: var(--pearl);
+    line-height: 1.5;
+    max-width: 32ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .paper--rose figcaption::first-letter,
+  .paper--storm figcaption::first-letter {
+    color: var(--gold);
+  }
+  @media (max-width: 640px) {
+    .papers { grid-template-columns: 1fr; }
   }
 
   /* ═══ SANDRA PORTRAIT ═══ */
   .sandra-portrait {
     position: relative;
-    width: 180px;
-    height: 180px;
-    margin: 0 auto 2rem;
+    width: 168px;
+    height: 168px;
+    margin: 0 auto 2.25rem;
     border-radius: 50%;
-    overflow: visible;
+    overflow: hidden;
+    border: 1px solid var(--gold-soft);
+    box-shadow: var(--shadow-md);
   }
   .sandra-portrait img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
-    box-shadow: var(--shadow-md);
-    border: 4px solid white;
+  }
+
+  /* ═══ TEXT LINK ═══ */
+  .text-link {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    transition: color 0.2s ease;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+    padding-bottom: 2px;
+  }
+  .text-link:hover {
+    color: var(--gold-bright);
+    border-bottom-color: var(--gold-bright);
   }
 
   /* ═══ PULL QUOTE ═══ */
   .pull-quote {
     margin: 1.75rem 0 0;
-    padding: 1.5rem 1.75rem;
-    background: white;
-    border-radius: var(--radius-md);
-    border-left: 4px solid var(--sky-deep);
+    padding: 1.5rem 0 1.5rem 1.75rem;
+    border-left: 1px solid var(--gold);
     font-family: 'Lora', serif;
     font-style: italic;
     font-size: 1.125rem;
-    color: var(--text-dark);
-    line-height: 1.55;
-    box-shadow: var(--shadow-sm);
+    color: var(--pearl);
+    line-height: 1.6;
     max-width: 52ch;
   }
 
@@ -711,71 +976,62 @@ const jsonLd = {
   .roadmap {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     flex-wrap: wrap;
     position: relative;
   }
 
   .roadmap__item {
     text-align: center;
-    min-width: 120px;
-    padding: 1.25rem 1rem;
-    background: white;
+    min-width: 140px;
+    padding: 1.5rem 1.25rem;
+    background: var(--graphite);
+    border: 1px solid var(--hairline);
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-sm);
-    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    transition: border-color 0.25s ease, transform 0.25s ease;
   }
 
   .roadmap__item:hover {
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-md);
+    border-color: rgba(212, 175, 55, 0.4);
+    transform: translateY(-2px);
   }
 
   .roadmap__dot {
     display: block;
-    width: 14px;
-    height: 14px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
-    background: var(--sand);
-    margin: 0 auto 0.75rem;
-    position: relative;
+    background: var(--ash);
+    margin: 0 auto 0.875rem;
   }
 
   .roadmap__item--active {
-    background: linear-gradient(135deg, var(--blush-soft) 0%, var(--sky-soft) 100%);
+    border-color: var(--gold);
   }
 
   .roadmap__item--active .roadmap__dot {
-    background: var(--rose-deep);
-    box-shadow: 0 0 0 4px rgba(212, 102, 122, 0.22);
+    background: var(--gold);
+    box-shadow: 0 0 0 4px var(--gold-soft);
   }
 
   .roadmap__item h4 {
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
+    font-size: 0.9375rem;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+    margin-bottom: 0.375rem;
+    color: var(--pearl);
   }
 
   .roadmap__item p {
-    font-size: 0.8125rem;
-    color: var(--text-muted);
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ash);
     margin: 0 auto;
   }
 
   .roadmap__item--active h4 {
-    color: var(--rose-deep);
-  }
-
-  /* ═══ TEXT LINK ═══ */
-  .text-link {
-    font-weight: 600;
-    color: var(--rose-deep);
-    transition: color 0.2s ease;
-    border-bottom: 1.5px solid rgba(212, 102, 122, 0.35);
-  }
-
-  .text-link:hover {
-    color: var(--sky-deep);
-    border-bottom-color: var(--sky-deep);
+    color: var(--gold);
   }
 
   /* ═══ WAITLIST FORM ═══ */
@@ -795,76 +1051,82 @@ const jsonLd = {
 
   .waitlist-input {
     flex: 1;
-    padding: 0.875rem 1.125rem;
-    border: 1.5px solid rgba(250, 246, 240, 0.15);
-    border-radius: var(--radius-md);
-    background: rgba(250, 246, 240, 0.06);
-    color: var(--linen);
+    padding: 0.95rem 1.125rem;
+    border: 1px solid var(--hairline);
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.025);
+    color: var(--pearl);
     font-family: 'DM Sans', sans-serif;
     font-size: 0.9375rem;
     transition: border-color 0.2s ease, background 0.2s ease;
   }
 
   .waitlist-input::placeholder {
-    color: rgba(250, 246, 240, 0.35);
+    color: var(--ash);
   }
 
   .waitlist-input:focus {
     outline: none;
-    border-color: var(--blush);
-    background: rgba(250, 246, 240, 0.10);
+    border-color: var(--gold);
+    background: rgba(255, 255, 255, 0.04);
   }
 
   .waitlist-status {
     font-size: 0.9375rem;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-sm);
     padding: 0;
     transition: all 0.3s ease;
   }
 
   .waitlist-status.success {
     padding: 0.875rem 1.25rem;
-    background: rgba(184, 204, 158, 0.18);
-    color: var(--sage);
-    border: 1px solid rgba(184, 204, 158, 0.3);
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--gold-bright);
+    border: 1px solid rgba(212, 175, 55, 0.3);
   }
 
   .waitlist-status.error {
     padding: 0.875rem 1.25rem;
-    background: rgba(245, 168, 178, 0.14);
-    color: var(--blush);
-    border: 1px solid rgba(245, 168, 178, 0.3);
+    background: rgba(220, 100, 100, 0.08);
+    color: #E89A9A;
+    border: 1px solid rgba(220, 100, 100, 0.25);
   }
 
-  .cf-turnstile {
-    margin: 0.25rem 0;
+  .cf-turnstile { margin: 0.25rem 0; }
+
+  .waitlist-fineprint {
+    color: var(--ash);
+    font-size: 0.8125rem;
+    margin-top: 1.5rem;
+    letter-spacing: 0.04em;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (max-width: 480px) {
-    .waitlist-form__row {
-      flex-direction: column;
-    }
+    .waitlist-form__row { flex-direction: column; }
   }
 
   /* ═══ FOOTER ═══ */
   .footer {
-    background: var(--linen);
-    padding: var(--space-lg) 0;
+    background: var(--ink);
+    padding: var(--space-lg) 0 var(--space-md);
+    border-top: 1px solid var(--hairline);
   }
 
   .footer__brand {
-    font-family: 'Lora', serif;
-    font-size: 1.375rem;
-    font-weight: 600;
-    color: var(--text-dark);
+    font-family: 'Allura', cursive;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--gold);
     max-width: none;
   }
 
   .footer__tagline {
     font-size: 0.9375rem;
-    color: var(--text-muted);
-    margin-top: 0.25rem;
-    margin-bottom: 1.5rem;
+    color: var(--ash);
+    margin: 0.375rem auto 1.75rem;
     max-width: none;
   }
 
@@ -872,27 +1134,28 @@ const jsonLd = {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.875rem;
     margin-bottom: 1.5rem;
+    flex-wrap: wrap;
   }
 
   .footer__links a {
-    font-size: 0.875rem;
-    color: var(--text-muted);
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ash);
     transition: color 0.2s ease;
   }
 
-  .footer__links a:hover {
-    color: var(--rose-deep);
-  }
+  .footer__links a:hover { color: var(--gold); }
 
-  .footer__sep {
-    color: var(--sand);
-  }
+  .footer__sep { color: var(--slate); }
 
   .footer__copy {
-    font-size: 0.75rem;
-    color: var(--sand);
+    font-size: 0.6875rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--slate);
     margin: 0 auto;
   }
 </style>

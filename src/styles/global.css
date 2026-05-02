@@ -1,38 +1,40 @@
 /* ============================================
-   The Happy Class - Design System
-   Joyful. Vibrant pastels. Pop of color.
-   Built on Sandra Weise's brand guide typography,
-   shifted toward saturated pinks + blues for
-   the Happy Class sub-brand.
+   The Happy Class , Design System
+   Dark, premium, masculine. Charcoal + grayscale
+   with a single warm-gold accent. Built to feel
+   editorial / Aesop / Loewe , the box is unassuming,
+   the brand is confident.
    ============================================ */
 
 :root {
-  /* ── Base warm neutrals ── */
-  --cream: #FFF9F3;
-  --linen: #FAF3E8;
-  --sand: #E8D9BE;
-  --driftwood: #A68B6B;
-  --espresso: #2C1D12;
+  /* ── Surface (dark first) ── */
+  --ink:        #0A0A0A;   /* near-black, page base */
+  --charcoal:   #141414;   /* primary surface */
+  --graphite:   #1E1E1E;   /* card / panel surface */
+  --slate:      #2A2A2A;   /* hover / raised surface */
+  --hairline:   rgba(232, 230, 225, 0.08);
 
-  /* ── Happy Class vibrant pastels ── */
-  --blush:        #F5A8B2;  /* saturated blush pink */
-  --blush-soft:   #FCE3E8;  /* airy pink wash */
-  --rose:         #E8849B;  /* medium rose */
-  --rose-deep:    #D4667A;  /* bold rose - CTA */
-  --sky:          #8CC3DE;  /* saturated pastel blue */
-  --sky-soft:     #DBEEF7;  /* airy blue wash */
-  --sky-deep:     #5FA5C7;  /* bold blue */
-  --butter:       #F6D77A;  /* saturated butter yellow */
-  --butter-soft:  #FDEFC6;  /* airy butter wash */
-  --sage:         #B8CC9E;  /* fresh sage */
-  --coral:        #F0A28F;  /* warm coral accent */
-  --indigo:       #3D4F8F;  /* deep accent */
+  /* ── Type on dark ── */
+  --bone:       #E8E6E1;   /* body on dark */
+  --pearl:      #F5F2EC;   /* headings on dark */
+  --ash:        #9A958E;   /* muted body */
+  --silver:     #C9C5BD;   /* secondary body */
 
-  /* ── Text ── */
-  --text-dark:    #3A2A1F;
-  --text-muted:   #7A6D63;
-  --text-light:   #FFF9F3;
-  --border-subtle: rgba(58, 42, 31, 0.08);
+  /* ── Light interlude (used sparingly) ── */
+  --linen:      #F2EFE8;
+  --bone-bg:    #E5E1D8;
+  --ink-on-light: #1A1916;
+  --muted-on-light: #5A554E;
+
+  /* ── Single accent ── */
+  --gold:       #D4AF37;
+  --gold-bright:#E8C66A;
+  --gold-deep:  #A8852A;
+  --gold-soft:  rgba(212, 175, 55, 0.16);
+
+  /* ── Card colours (the pink/blue mechanic, premiumised) ── */
+  --rose:       #9B6B72;
+  --storm:      #5A6F84;
 
   /* ── Spacing ── */
   --space-xs: 0.5rem;
@@ -42,22 +44,20 @@
   --space-xl: 5rem;
   --space-2xl: 8rem;
 
-  --container-max: 1100px;
-  --container-narrow: 640px;
+  --container-max: 1180px;
+  --container-narrow: 680px;
 
-  /* ── Radii ── */
-  --radius-sm: 0.5rem;
-  --radius-md: 1rem;
-  --radius-lg: 1.5rem;
-  --radius-xl: 2rem;
+  /* ── Radii (restrained , premium reads as less rounded) ── */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
   --radius-pill: 999px;
 
-  /* ── Shadows ── */
-  --shadow-sm: 0 2px 8px rgba(58, 42, 31, 0.06);
-  --shadow-md: 0 8px 24px rgba(58, 42, 31, 0.08);
-  --shadow-lg: 0 16px 48px rgba(58, 42, 31, 0.12);
-  --shadow-rose: 0 8px 24px rgba(212, 102, 122, 0.25);
-  --shadow-sky: 0 8px 24px rgba(95, 165, 199, 0.22);
+  /* ── Shadows (deep, not soft) ── */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.55);
+  --shadow-gold: 0 0 0 1px rgba(212, 175, 55, 0.45);
 }
 
 *, *::before, *::after {
@@ -69,13 +69,14 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  background: var(--ink);
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
-  background: var(--cream);
-  color: var(--text-dark);
-  line-height: 1.6;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--ink);
+  color: var(--bone);
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -87,44 +88,54 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 ul, ol { list-style: none; }
 
 h1, h2, h3, h4 {
-  font-family: 'Lora', serif;
-  font-weight: 600;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  color: var(--text-dark);
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--pearl);
 }
 
-h1 { font-size: clamp(2.75rem, 6.5vw, 4.5rem); font-weight: 700; }
-h2 { font-size: clamp(2rem, 4.5vw, 3rem); }
-h3 { font-size: clamp(1.25rem, 3vw, 1.75rem); }
+h1 {
+  font-size: clamp(2.75rem, 6.2vw, 4.75rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+h2 {
+  font-size: clamp(2rem, 4.4vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+h3 {
+  font-size: clamp(1.125rem, 2.4vw, 1.4rem);
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
 
 p {
   max-width: 60ch;
   line-height: 1.75;
+  color: var(--silver);
 }
 
-/* Script accent - used for "even better", "good", etc. */
-.script {
-  font-family: 'Caveat', cursive;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: 0;
-  line-height: 0.95;
-  font-size: 1.25em;
-  display: inline-block;
-  transform: rotate(-1.5deg);
+em {
+  font-style: italic;
+  color: var(--pearl);
 }
 
-.script--rose   { color: var(--rose-deep); }
-.script--sky    { color: var(--sky-deep); }
-.script--butter { color: #C89F2B; }
+/* Italic serif accent , replaces the previous handwritten "script" flourish. */
+.accent {
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold);
+}
 
 /* ── Layout ── */
 .container {
   width: 100%;
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1.75rem;
 }
 
 .container--narrow {
@@ -138,53 +149,117 @@ p {
 
 @media (max-width: 768px) {
   .section { padding: var(--space-lg) 0; }
+  .container { padding: 0 1.25rem; }
 }
 
 .text-center { text-align: center; }
 .mx-auto { margin-left: auto; margin-right: auto; }
+
+/* ── Surface variants ── */
+.bg-ink       { background: var(--ink); }
+.bg-charcoal  { background: var(--charcoal); }
+.bg-graphite  { background: var(--graphite); }
+.bg-linen     { background: var(--linen); color: var(--ink-on-light); }
+.bg-linen h1, .bg-linen h2, .bg-linen h3, .bg-linen h4 { color: var(--ink-on-light); }
+.bg-linen p   { color: var(--muted-on-light); }
+
+/* ── Overlines (uppercase gold rules) ── */
+.overline {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: none;
+}
+.overline::before {
+  content: "";
+  width: 24px;
+  height: 1px;
+  background: var(--gold);
+  display: inline-block;
+}
+
+.text-center .overline {
+  justify-content: center;
+}
+
+.lead {
+  font-size: 1.0625rem;
+  color: var(--silver);
+  margin-top: 1.5rem;
+  line-height: 1.8;
+  max-width: 56ch;
+}
+
+.bg-linen .lead { color: var(--muted-on-light); }
+
+.tiny-note {
+  color: var(--ash);
+  font-size: 0.875rem;
+  letter-spacing: 0.04em;
+  margin: 0 auto;
+  max-width: 48ch;
+  font-style: italic;
+}
 
 /* ── Buttons ── */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  padding: 1rem 2.25rem;
-  border-radius: var(--radius-pill);
+  gap: 0.625rem;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-sm);
   font-family: 'DM Sans', sans-serif;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  transition: transform 0.2s ease, box-shadow 0.3s ease, background 0.3s ease;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
   white-space: nowrap;
   position: relative;
+  border: 1px solid transparent;
 }
 
-.btn--rose {
-  background: linear-gradient(135deg, var(--rose) 0%, var(--rose-deep) 100%);
-  color: white;
-  box-shadow: var(--shadow-rose);
+.btn--gold {
+  background: var(--gold);
+  color: var(--ink);
+  border-color: var(--gold);
+}
+.btn--gold:hover {
+  background: var(--gold-bright);
+  border-color: var(--gold-bright);
 }
 
-.btn--rose:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(212, 102, 122, 0.35);
+.btn--ghost {
+  background: transparent;
+  color: var(--gold);
+  border-color: var(--gold);
 }
-
-.btn--primary {
-  background: var(--espresso);
-  color: var(--text-light);
-}
-
-.btn--primary:hover {
-  background: #1d130a;
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+.btn--ghost:hover {
+  background: var(--gold);
+  color: var(--ink);
 }
 
 .btn--large {
-  padding: 1.125rem 2.75rem;
-  font-size: 1.0625rem;
+  padding: 1.125rem 2.5rem;
+  font-size: 0.875rem;
+}
+
+/* ── Hairline divider ── */
+.rule {
+  display: block;
+  width: 60px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto;
+  opacity: 0.7;
 }
 
 /* ── Utility ── */
@@ -198,15 +273,7 @@ p {
   border-width: 0;
 }
 
-/* ── Floating confetti dots (decorative) ── */
-.confetti {
-  position: absolute;
-  border-radius: 50%;
-  pointer-events: none;
-  opacity: 0.75;
+::selection {
+  background: var(--gold);
+  color: var(--ink);
 }
-.confetti--blush  { background: var(--blush); }
-.confetti--sky    { background: var(--sky); }
-.confetti--butter { background: var(--butter); }
-.confetti--sage   { background: var(--sage); }
-.confetti--coral  { background: var(--coral); }

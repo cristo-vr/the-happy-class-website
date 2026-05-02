@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Happy Class image generator — KIE AI / Nano Banana Pro.
+ * Happy Class image generator : KIE AI / Nano Banana Pro.
  *
  * Usage:
  *   node scripts/generate-images.mjs                  generate all missing
